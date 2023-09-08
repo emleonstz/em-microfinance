@@ -44,7 +44,7 @@ class UsersModel extends Model
     protected $afterDelete    = [];
 
     public function simpleUserdata($uid){
-        $query  = $this->db->query("SELECT `id`, `first_name`, `last_name`, `email`, `phone`, `system_role`,`accout_status`, `api_key`, `photo`, `microfinance_id` FROM `staff_users` WHERE `id` = ?",[$uid],true);
+        $query  = $this->db->query("SELECT `id`, `first_name`, `last_name`, `email`, `phone`, `system_role`,`accout_status`,`last_activity`, `api_key`, `photo`, `microfinance_id` FROM `staff_users` WHERE `id` = ?",[$uid],true);
         $result = $query->getRowArray();
         return $result;
     }

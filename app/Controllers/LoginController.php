@@ -64,13 +64,14 @@ class LoginController extends BaseController
                             'USER_LASTNAME' => $user['last_name'],
                             'USER_PHOTO' => $user['photo'],
                             'USER_PHONE' => $user['phone'],
-                            'USER_APIKEY' => $user['api_key'],
-                            'TIMEOUT' => base64_encode($this->shared->encrypt($user['api_key'])),
+                            'USER_APIKEY' => base64_encode($this->shared->encrypt($user['api_key'])),
+                            'timeOUT' => base64_encode($this->shared->encrypt($user['api_key'])),
 
                         ];
                         $this->session->set($ses_data);
-                        
-
+                        $this->shared->updateLastActivity();
+                        return redirect()->to('/');
+                    
                     } else {
                         $model = new FailedLogins();
                         $ip = $this->request->getIPAddress();

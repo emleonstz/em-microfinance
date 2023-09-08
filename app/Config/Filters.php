@@ -25,6 +25,7 @@ class Filters extends BaseConfig
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
         'oauth' => \App\Filters\AuthFilter::class,
+        'maskani' => \App\Filters\Guestftilter::class,
     ];
 
     /**
