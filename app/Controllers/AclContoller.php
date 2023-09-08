@@ -29,15 +29,15 @@ class AclContoller extends BaseController
         ];
     }
 
-    public function addRole($role) {
+    public function alloweUserRole($role) {
         $this->roles[] = $role;
     }
 
-    public function addResource($resource) {
+    public function toResource($resource) {
         $this->resources[] = $resource;
     }
 
-    public function addPermission($permission) {
+    public function withPermission($permission) {
         $this->permissions[] = $permission;
     }
 

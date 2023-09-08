@@ -3,9 +3,15 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\UsersModel;
 
 class SharedControler extends BaseController
 {
+    private $usersmodel;
+    public function __construct()
+    {
+      $this->usersmodel = new UsersModel();
+    }
     public function index()
     {
         //
@@ -48,5 +54,50 @@ class SharedControler extends BaseController
       
         // Return the word
         return $word;
+      }
+      public function encrypt($plainText)
+    {
+        $encrypter = \Config\Services::encrypter();
+        $ciphertext = $encrypter->encrypt($plainText);
+        return $ciphertext;
+    }
+
+    public function decrypt($ciphertext)
+    {
+        $encrypter = \Config\Services::encrypter();
+        $deciphertext = $encrypter->decrypt($ciphertext);
+        return $deciphertext;
+    }
+
+      public function checkLogin(){
+        if(! empty(session()->get('USER_ID'))){
+          $userid = $this->decrypt(base64_decode(session()->get('USER_ID')));
+          $userinfo = $this->usersmodel->simpleUserdata($userid);
+          if(!empty($userinfo) && is_array($userinfo)){
+            if($userinfo['api_key'] != $this->decrypt(base64_decode(session()->get('USER_APIKEY')))){
+              return false;
+            }else{
+              if($userinfo['accout_status'] != "Active"){
+                return false;
+              }else{
+                $currenttime = time();
+                $lastime  = $userinfo['last_activity'];
+                if($lastime>$currenttime){
+                  return true;
+                }else{
+                  return false;
+                }
+              }
+            }
+          }else{
+            return false;
+          }
+        }else{
+          return false;
+        }
+      }
+      public function updateLastActivity(){
+        $userid = $this->decrypt(base64_decode(session()->get('USER_ID')));
+        $this->usersmodel->setLastActivity($userid);
       }
 }

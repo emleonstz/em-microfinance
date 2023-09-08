@@ -2,6 +2,7 @@
 
 namespace App\Filters;
 
+use App\Controllers\SharedControler;
 use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -25,7 +26,12 @@ class AuthFilter implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        //
+        $shared = new SharedControler;
+        if($shared->checkLogin()){
+            $shared->updateLastActivity();
+        }else{
+            return redirect()->to('/logout');
+        }
     }
 
     /**
