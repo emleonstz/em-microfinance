@@ -12,36 +12,42 @@ class AclContoller extends BaseController
 
     public function __construct() {
         $this->roles = [
-            'director',
-            'collector',
-            'loan_officer',
+            
         ];
         $this->resources = [
-            'collectors_dash',
-            'loanofficer_dash',
-            'director_dash',
+            
         ];
         $this->permissions = [
-            'view',
-            'edit',
-            'delete',
-            'add',
+            
         ];
     }
 
-    public function alloweUserRole($role) {
+    public function ruhusu($role) {
         $this->roles[] = $role;
     }
 
-    public function toResource($resource) {
+    public function kwenyepage($resource) {
         $this->resources[] = $resource;
     }
 
-    public function withPermission($permission) {
+    public function addPerm($permission) {
         $this->permissions[] = $permission;
     }
 
-    public function isAllowed($role, $resource, $permission) {
+    public function amerusiwa($role, $resource, $permission) {
         return in_array($role, $this->roles) && in_array($resource, $this->resources) && in_array($permission, $this->permissions);
+    }
+    public function viewDashboard($userole){
+        if($userole=="collector" || $userole=="teller"){
+            $this->ruhusu('collector');
+            $this->ruhusu('teller');
+            $this->kwenyepage('collectors_dash');
+            $this->addPerm('view');
+            if($this->amerusiwa($userole,'collectors_dash','view')){
+                return view('app_head') .view('collection_officer').view('app_footer');
+            }else{
+               die("hi");
+            }
+        }
     }
 }

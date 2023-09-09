@@ -15,7 +15,7 @@
 
 <body class="app sidebar-mini rtl">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="index.html">Vali</a>
+    <header class="app-header"><a class="app-header__logo" href="/">Vali</a>
         <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
         <!-- Navbar Right Menu-->
         <ul class="app-nav">
@@ -73,9 +73,9 @@
             <!-- User Menu-->
             <li class="dropdown"><a class="app-nav__item" href="#" data-toggle="dropdown" aria-label="Open Profile Menu"><i class="fa fa-user fa-lg"></i></a>
                 <ul class="dropdown-menu settings-menu dropdown-menu-right">
-                    <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-                    <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
-                    <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                    <li><a class="dropdown-item" href="/mpangilio"><i class="fa fa-cog fa-lg"></i> Mipangilio</a></li>
+                    <li><a class="dropdown-item" href="/wasifu"><i class="fa fa-user fa-lg"></i> Wasifu</a></li>
+                    <li><a class="dropdown-item" href="/ondoka"><i class="fa fa-sign-out fa-lg"></i> Ondoka</a></li>
                 </ul>
             </li>
         </ul>
@@ -83,59 +83,71 @@
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-        <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
+        <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="<?php echo base_url('assets/img/user.png') ?>" width="30px" height="30px" alt="User Image">
             <div>
-                <p class="app-sidebar__user-name">John Doe</p>
-                <p class="app-sidebar__user-designation">Frontend Developer</p>
+                <p class="app-sidebar__user-name"><?php echo session()->USER_FIRSTNAME." ".session()->USER_LASTNAME ?></p>
+                <p class="app-sidebar__user-designation"><i class="fa fa-home"></i> <?php echo session()->USER_POSTION ?></p>
             </div>
         </div>
         <ul class="app-menu">
-            <li><a class="app-menu__item active" href="index.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
-            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">UI Elements</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <li><a class="app-menu__item active" href="/"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-users"></i><span class="app-menu__label">Wakopaji</span><i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a class="treeview-item" href="bootstrap-components.html"><i class="icon fa fa-circle-o"></i> Bootstrap Elements</a></li>
-                    <li><a class="treeview-item" href="https://fontawesome.com/v4.7.0/icons/" target="_blank" rel="noopener"><i class="icon fa fa-circle-o"></i> Font Icons</a></li>
-                    <li><a class="treeview-item" href="ui-cards.html"><i class="icon fa fa-circle-o"></i> Cards</a></li>
-                    <li><a class="treeview-item" href="widgets.html"><i class="icon fa fa-circle-o"></i> Widgets</a></li>
+                    <li><a class="treeview-item" href="/ongezawakopaji"><i class="icon fa fa-circle-o"></i> Sajili Wakopaji </a></li>
+                    <li><a class="treeview-item" href="/wakopaji" ><i class="icon fa fa-circle-o"></i> Tazama wakopaji</a></li>
+                    <li><a class="treeview-item" href="/wakopajiujumbe"><i class="icon fa fa-circle-o"></i> Tuma SMS kwa Wakopaji</a></li>
+                    <li><a class="treeview-item" href="/wadhamini"><i class="icon fa fa-circle-o"></i> Wadhamini</a></li>
                 </ul>
             </li>
-            <li><a class="app-menu__item" href="charts.html"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Charts</span></a></li>
-            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Forms</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-edit"></i><span class="app-menu__label">Mikopo</span><i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a class="treeview-item" href="form-components.html"><i class="icon fa fa-circle-o"></i> Form Components</a></li>
-                    <li><a class="treeview-item" href="form-custom.html"><i class="icon fa fa-circle-o"></i> Custom Components</a></li>
-                    <li><a class="treeview-item" href="form-samples.html"><i class="icon fa fa-circle-o"></i> Form Samples</a></li>
-                    <li><a class="treeview-item" href="form-notifications.html"><i class="icon fa fa-circle-o"></i> Form Notifications</a></li>
+                    <li><a class="treeview-item" href="/ongezamikopo"><i class="icon fa fa-circle-o"></i> Wasilisha Maombi ya mkopo</a></li>
+                    <li><a class="treeview-item" href="/maombiyanayosubiri"><i class="icon fa fa-circle-o"></i>Maombi yaliyosubirishwa</a></li>
+                    <li><a class="treeview-item" href="/mikopoisiyolipwa"><i class="icon fa fa-circle-o"></i> Ambayo haijalipwa</a></li>
+                    <li><a class="treeview-item" href="/mikopoisiyomalizika"><i class="icon fa fa-circle-o"></i> Ambayo haijakamilika</a></li>  
+                    <li><a class="treeview-item" href="/iliyopitiliza"><i class="icon fa fa-circle-o"></i> Iliyopitiliza muda wa malipo</a></li>  
+                    <li><a class="treeview-item" href="/tazamamikopo"><i class="icon fa fa-circle-o"></i>Mikopo yote</a></li>
                 </ul>
             </li>
-            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tables</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Malipo ya mikopo</span><i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a class="treeview-item" href="table-basic.html"><i class="icon fa fa-circle-o"></i> Basic Tables</a></li>
-                    <li><a class="treeview-item" href="table-data-table.html"><i class="icon fa fa-circle-o"></i> Data Tables</a></li>
+                    <li><a class="treeview-item" href="/lipamkopo"><i class="icon fa fa-circle-o"></i> Wasilisha malipo</a></li>
+                    <li><a class="treeview-item" href="/malipoyaliyosubirishwa"><i class="icon fa fa-circle-o"></i> Malipo yaliyosubirishwa</a></li>
+                    
                 </ul>
             </li>
-            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Wafanyakazi</span><i class="treeview-indicator fa fa-angle-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a class="treeview-item" href="blank-page.html"><i class="icon fa fa-circle-o"></i> Blank Page</a></li>
-                    <li><a class="treeview-item" href="page-login.html"><i class="icon fa fa-circle-o"></i> Login Page</a></li>
-                    <li><a class="treeview-item" href="page-lockscreen.html"><i class="icon fa fa-circle-o"></i> Lockscreen Page</a></li>
-                    <li><a class="treeview-item" href="page-user.html"><i class="icon fa fa-circle-o"></i> User Page</a></li>
-                    <li><a class="treeview-item" href="page-invoice.html"><i class="icon fa fa-circle-o"></i> Invoice Page</a></li>
-                    <li><a class="treeview-item" href="page-calendar.html"><i class="icon fa fa-circle-o"></i> Calendar Page</a></li>
-                    <li><a class="treeview-item" href="page-mailbox.html"><i class="icon fa fa-circle-o"></i> Mailbox</a></li>
-                    <li><a class="treeview-item" href="page-error.html"><i class="icon fa fa-circle-o"></i> Error Page</a></li>
+                    <li><a class="treeview-item" href="/ongezamfanyakazi"><i class="icon fa fa-circle-o"></i> Sajili mfanyakazi</a></li>
+                    <li><a class="treeview-item" href="/wafanyakazi"><i class="icon fa fa-circle-o"></i> Tazama Wafanyakazi</a></li>
+                    <li><a class="treeview-item" href="/ujumbekwawafanykazi"><i class="icon fa fa-circle-o"></i> Tuma SMS kwa wafanyakazi</a></li>
+                    
+                </ul>
+            </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Ripoti</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" href="/ripotiyamikopo"><i class="icon fa fa-circle-o"></i> Ripoti ya mikopo</a></li>
+                    <li><a class="treeview-item" href="/ripotiyamalipo"><i class="icon fa fa-circle-o"></i> Ripoti ya malipo</a></li>
+                    <li><a class="treeview-item" href="/ripotiyawakopji"><i class="icon fa fa-circle-o"></i> Ripoti ya wakopaji</a></li>
+                    <li><a class="treeview-item" href="/ripotiyamapato"><i class="icon fa fa-circle-o"></i> Ripoti ya mapato</a></li>
+                    <li><a class="treeview-item" href="/ripoti"><i class="icon fa fa-circle-o"></i> Ripoti kwa ujumla</a></li>
+                    
+                </ul>
+            </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Tawi langu</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" href="/sajilitawi"><i class="icon fa fa-circle-o"></i> Sajili Tawi</a></li>
+                    <li><a class="treeview-item" href="/matawiyangu"><i class="icon fa fa-circle-o"></i> Tazama matawil</a></li>                    
+                </ul>
+            </li>
+            <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-th-list"></i><span class="app-menu__label">Mengineyo</span><i class="treeview-indicator fa fa-angle-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a class="treeview-item" href="/sms"><i class="icon fa fa-circle-o"></i> Kifurushi cha SMS</a></li>
+                    <li><a class="treeview-item" href="/mchanganuo"><i class="icon fa fa-circle-o"></i> Uchanganuzi</a></li>
                 </ul>
             </li>
         </ul>
     </aside>
     <main class="app-content">
-        <div class="app-title">
-            <div>
-                <h1><i class="fa fa-dashboard"></i> Dashboard</h1>
-                <p>A free and open source Bootstrap 4 admin template</p>
-            </div>
-            <ul class="app-breadcrumb breadcrumb">
-                <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-            </ul>
-        </div>
+        

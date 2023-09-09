@@ -4,10 +4,10 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class UsersModel extends Model
+class ClientsModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'staff_users';
+    protected $table            = 'clients';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
@@ -24,9 +24,9 @@ class UsersModel extends Model
 
     // Validation
     protected $validationRules      = [
-        'username'     => 'required|max_length[100]|alpha_numeric_space|min_length[3]',
-        'email'        => 'required|max_length[254]|valid_email|is_unique[staff_users.email]',
-        'password'     => 'required|max_length[255]|min_length[6]',
+        'full_name'     => 'required|max_length[100]|alpha_numeric_space|min_length[3]',
+        'last_name'     => 'required|max_length[100]|alpha_numeric_space|min_length[3]',
+        'email'        => 'required|max_length[254]|valid_email|is_unique[clients.email]',
     ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
@@ -42,14 +42,4 @@ class UsersModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
-
-    public function simpleUserdata($uid){
-        $query  = $this->db->query("SELECT  `first_name`, `last_name`, `email`, `phone`, `system_role`,`accout_status`,`last_activity`, `api_key`, `photo`, `microfinance_id` FROM `staff_users` WHERE `id` = ?",[$uid],true);
-        $result = $query->getRowArray();
-        return $result;
-    }
-    public function setLastActivity($id){
-        $lastactiontime = time()+180;
-        $query = $this->db->query("UPDATE `staff_users` SET `last_activity`= '$lastactiontime' WHERE `id` = ?",[$id],true);
-    }
 }

@@ -78,9 +78,9 @@
 </style>
 <div class="container">
     <p class="bs-component text-right">
-        <button class="btn btn-primary" type="button"><i class="fa fa-user-plus" aria-hidden="true"></i> Sajili Mkopaji</button>
-        <button class="btn btn-success" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Wasilisha Maombi ya mkopo</button>
-        <button class="btn btn-success" type="button"><i class="fa fa-money" aria-hidden="true"></i> Wasilisha Malipo mkopo</button>
+        <a href="/ongezawakopaji" class="btn btn-primary" type="button"><i class="fa fa-user-plus" aria-hidden="true"></i> Sajili Mkopaji</a>
+        <a href="#" class="btn btn-success" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Wasilisha Maombi ya mkopo</a>
+        <a href="#" class="btn btn-success" type="button"><i class="fa fa-money" aria-hidden="true"></i> Wasilisha Malipo mkopo</a>
     </p>
     <div class="row">
         <div class="col-lg-3 col-sm-6">

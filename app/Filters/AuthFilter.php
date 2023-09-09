@@ -30,7 +30,7 @@ class AuthFilter implements FilterInterface
         if($shared->checkLogin()){
             $shared->updateLastActivity();
         }else{
-            return redirect()->to('/logout');
+            return redirect()->to('/ondoka');
         }
     }
 

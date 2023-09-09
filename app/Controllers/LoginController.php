@@ -64,6 +64,7 @@ class LoginController extends BaseController
                             'USER_LASTNAME' => $user['last_name'],
                             'USER_PHOTO' => $user['photo'],
                             'USER_PHONE' => $user['phone'],
+                            'USER_POSTION' => $user['system_role'],
                             'USER_APIKEY' => base64_encode($this->shared->encrypt($user['api_key'])),
                             'timeOUT' => base64_encode($this->shared->encrypt($user['api_key'])),
 
@@ -123,7 +124,7 @@ class LoginController extends BaseController
     }
     public function logout() {
         $this->session->destroy();
-        return redirect()->to('/login');
+        return redirect()->to('/ingia');
         exit();
     }
 }
