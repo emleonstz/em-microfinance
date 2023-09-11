@@ -8,13 +8,31 @@ use App\Models\UsersModel;
 class SharedControler extends BaseController
 {
   private $usersmodel;
+  private $key;
   public function __construct()
   {
     $this->usersmodel = new UsersModel();
+    $this->key = "APoKOStqiYfLkfi0AQOLbz0uziu";
   }
   public function index()
   {
     //
+  }
+  //stupid ecn
+  function simpleEncrypt($text, $key = null)
+  {
+      $key = ($key == null) ? $this->key : $key;
+      $ciphertext = base64_encode($text . $key);
+      return $ciphertext;
+  }
+
+  function simpleDecrypt($ciphertext, $key = null)
+  {
+      $key = ($key == null) ? $this->key : $key;
+      $plaintext = base64_decode($ciphertext);
+      $key_len = strlen($key);
+      $plaintext = substr($plaintext, 0, -$key_len);
+      return $plaintext;
   }
   function convertNumberToSwahili($num)
   {
@@ -106,5 +124,9 @@ class SharedControler extends BaseController
   public function getCurrentUserInfo(){
     $userid = $this->decrypt(base64_decode(session()->get('USER_ID')));
     return $this->usersmodel->simpleUserdata($userid);
+  }
+  public function get_user_microfinance(){
+    $userid = $this->decrypt(base64_decode(session()->get('USER_ID')));
+    return $this->usersmodel->get_user_microfinance($userid);
   }
 }

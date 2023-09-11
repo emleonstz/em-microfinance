@@ -45,7 +45,7 @@ class FailedLogins extends Model
         return $result;
     }
     function temporaryBan($ipAdress){
-        $enableTime = time() + 120;
+        $enableTime = time() + 1200;
         $this->setAllowedFields(['ip_adress', 'atempt_count', 'enable_after']);
         $data = ['ip_adress'=>$ipAdress,
          'atempt_count'=>0, 

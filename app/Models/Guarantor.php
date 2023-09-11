@@ -4,10 +4,10 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ClientsModel extends Model
+class Guarantor extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'clients';
+    protected $table            = 'guarantors';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
@@ -23,11 +23,7 @@ class ClientsModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [
-        'full_name'     => 'required|max_length[100]|alpha_numeric_space|min_length[3]',
-        'last_name'     => 'required|max_length[100]|alpha_numeric_space|min_length[3]',
-        'email'        => 'required|max_length[254]|valid_email|is_unique[clients.email]',
-    ];
+    protected $validationRules      = [];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
@@ -43,10 +39,9 @@ class ClientsModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-
-    public function lastinsetreddata(){
-        $query = $this->db->query("SELECT `id` FROM `clients` ORDER BY id DESC LIMIT 1;");
-        $result = $query->getRowArray();
-        return $result['id'];
+    public function getSponsersByUser($userid,$microfinaceid){
+        $query = $this->db->query("SELECT * FROM `guarantor` WHERE `client_id` = ? AND microfinace_id = ?",[$userid,$microfinaceid],true);
+        $result = $query->getResultArray();
+        return $result;
     }
 }

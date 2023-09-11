@@ -12,3 +12,4 @@ $routes->get('/ondoka', 'LoginController::logout');
 $routes->get('/wakopaji', 'WakopajiController::index',['filter'=>'oauth']);
 $routes->get('/ongezawakopaji', 'WakopajiController::fomuYakuongeza',['filter'=>'oauth']);
 $routes->post('/sajilimtumiaji', 'WakopajiController::kusanyafomuYakuongeza',['filter'=>'oauth']);
+$routes->get('/tazamamkopaji/(:any)', 'WakopajiController::tazama/$1',['filter'=>'oauth']);

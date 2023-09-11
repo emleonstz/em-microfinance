@@ -48,8 +48,14 @@ class UsersModel extends Model
         $result = $query->getRowArray();
         return $result;
     }
+    public function get_user_microfinance($uid){
+        $query = $this->db->query("SELECT staff_users.system_role, microfinances.* FROM `staff_users` INNER JOIN microfinances ON staff_users.id = ? AND microfinances.id = staff_users.microfinance_id;",[$uid],true);
+        $result = $query->getRowArray();
+        return $result;
+    }
+    
     public function setLastActivity($id){
-        $lastactiontime = time()+180;
+        $lastactiontime = time()+1800;
         $query = $this->db->query("UPDATE `staff_users` SET `last_activity`= '$lastactiontime' WHERE `id` = ?",[$id],true);
     }
 }
