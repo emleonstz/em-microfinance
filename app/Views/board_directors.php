@@ -88,6 +88,22 @@
  , #ffdf40, #ff8359)!important;
 }
 </style>
+<?php if (!empty(session()->get('ujumbe'))) : ?>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong><i class="fa fa-exclamation-triangle"></i></strong> <?= session()->get('ujumbe') ?>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php endif ?>
+<?php if (!empty(session()->get('error'))) : ?>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong><i class="fa fa-exclamation-triangle"></i></strong> <?= session()->get('error') ?>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php endif ?>
 <div class="container">
 <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
        <div class="col">

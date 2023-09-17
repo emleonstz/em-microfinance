@@ -76,6 +76,22 @@
         background-color: #d9534f !important;
     }
 </style>
+<?php if (!empty(session()->get('ujumbe'))) : ?>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong><i class="fa fa-exclamation-triangle"></i></strong> <?= session()->get('ujumbe') ?>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php endif ?>
+<?php if (!empty(session()->get('error'))) : ?>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong><i class="fa fa-exclamation-triangle"></i></strong> <?= session()->get('error') ?>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php endif ?>
 <div class="container">
     <p class="bs-component text-right">
         <a href="/ongezawakopaji" class="btn btn-primary" type="button"><i class="fa fa-user-plus" aria-hidden="true"></i> Sajili Mkopaji</a>

@@ -11,6 +11,7 @@
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/font-awesome/css/font-awesome.min.css') ?>">
     <script src="<?php echo base_url('assets/jquery/jquery-3.7.0.min.js') ?>"></script>
+    
 </head>
 
 <body class="app sidebar-mini rtl">

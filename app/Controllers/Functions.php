@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use NumberFormatter;
 
 class Functions extends BaseController
 {
@@ -31,11 +32,11 @@ class Functions extends BaseController
         if ($difference < 60) {
             return "recently";
         } else if ($difference < 3600) {
-            return "Dakika ".round($difference / 60)." zilizopita" ;
+            return "Dakika " . round($difference / 60) . " zilizopita";
         } else if ($difference < 86400) {
-            return "Maa yaliyopita ".round($difference / 3600) . " yalizopita";
+            return "Maa yaliyopita " . round($difference / 3600) . " yalizopita";
         } else if ($difference < 2592000) {
-            return "Siku ".round($difference / 86400) . " zilizopitz";
+            return "Siku " . round($difference / 86400) . " zilizopitz";
         } else {
             return date("M j, Y", strtotime($time));
         }
@@ -57,7 +58,7 @@ class Functions extends BaseController
     {
         // Get the current time as a timestamp
         $now = time();
-        
+
         // Check if the parameter timestamp is in the future or not
         if ($timestamp > $now) {
             // Calculate the difference in seconds between the two timestamps
@@ -93,7 +94,7 @@ class Functions extends BaseController
                     // Add an 's' if the value is plural
                     $output .= $unit . ' ' . $value;
                     if ($value > 1) {
-                        $output ;
+                        $output;
                     }
                 }
             }
@@ -104,5 +105,143 @@ class Functions extends BaseController
             // Return 'expired' if the parameter timestamp is not in the future
             return 'Umepitiliza';
         }
+    }
+    //relative date
+    function relative_date($date)
+    {
+        if (empty($date)) {
+            return "No date provided";
+        }
+
+        $periods         = array("sec", "min", "hour", "day", "week", "month", "year", "decade");
+        $lengths         = array("60", "60", "24", "7", "4.35", "12", "10");
+
+        $now             = time();
+
+        //check if supplied Date is in unix date form
+        if (is_numeric($date)) {
+            $unix_date        = $date;
+        } else {
+            $unix_date         = strtotime($date);
+        }
+
+
+        // check validity of date
+        if (empty($unix_date)) {
+            return "Bad date";
+        }
+
+        // is it future date or past date
+        if ($now > $unix_date) {
+            $difference     = $now - $unix_date;
+            $tense         = "ago";
+        } else {
+            $difference     = $unix_date - $now;
+            $tense         = "from now";
+        }
+
+        for ($j = 0; $difference >= $lengths[$j] && $j < count($lengths) - 1; $j++) {
+            $difference /= $lengths[$j];
+        }
+
+        $difference = round($difference);
+
+        if ($difference != 1) {
+            $periods[$j] .= "s";
+        }
+
+        return "$difference $periods[$j] {$tense}";
+    }
+    /**
+     * Parse Date Or Timestamp Object into Human Readable Date (e.g. 26th of March 2016)
+     * @return  string
+     */
+    function human_date($date)
+    {
+        if (empty($date)) {
+            return "Null date";
+        }
+        if (is_numeric($date)) {
+            $unix_date        = $date;
+        } else {
+            $unix_date         = strtotime($date);
+        }
+        // check validity of date
+        if (empty($unix_date)) {
+            return "Bad date";
+        }
+        return date("jS F, Y", $unix_date);
+    }
+
+    /**
+     * Parse Date Or Timestamp Object into Human Readable Date (e.g. 26th of March 2016)
+     * @return  string
+     */
+    function human_time($date)
+    {
+        if (empty($date)) {
+            return "Null date";
+        }
+        if (is_numeric($date)) {
+            $unix_date        = $date;
+        } else {
+            $unix_date         = strtotime($date);
+        }
+        // check validity of date
+        if (empty($unix_date)) {
+            return "Bad date";
+        }
+        return date("h:i:s", $unix_date);
+    }
+
+    /**
+     * Trucate string
+     * @return  string
+     */
+    function str_truncate($string, $length = 50, $ellipse = '...')
+    {
+        if (strlen($string) > $length) {
+            $string = substr($string, 0, $length) . $ellipse;
+        }
+        return $string;
+    }
+
+    /**
+     * Return String formatted in currency mode
+     * @return  string
+     */
+    function to_currency($val, $lang = 'en-US')
+    {
+        $f = new NumberFormatter($lang, \NumberFormatter::CURRENCY);
+        return $f->format($val);
+    }
+    /**
+     * return a numerical representation of the string in a readable format
+     * @return  string
+     */
+    function to_number($val, $lang = 'en')
+    {
+        $f = new NumberFormatter($lang, NumberFormatter::SPELLOUT);
+        return $f->format($val);
+    }
+
+    /**
+     * Convert Number to words
+     * @return  string
+     */
+    function number_to_words($val, $lang = "en")
+    {
+        $f = new NumberFormatter($lang, NumberFormatter::SPELLOUT);
+        return $f->format($val);
+    }
+
+    /**
+     * Generate a random string and characters from set of supplied data context
+     * @return  string
+     */
+    function random_chars($limit = 12, $context = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890')
+    {
+        $l = ($limit <= strlen($context) ? $limit : strlen($context));
+        return substr(str_shuffle($context), 0, $l);
     }
 }

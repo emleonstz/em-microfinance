@@ -1,3 +1,19 @@
+<?php if (!empty(session()->get('ujumbe'))) : ?>
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong><i class="fa fa-exclamation-triangle"></i></strong> <?= session()->get('ujumbe') ?>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php endif ?>
+<?php if (!empty(session()->get('error'))) : ?>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong><i class="fa fa-exclamation-triangle"></i></strong> <?= session()->get('error') ?>.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+<?php endif ?>
 <div class="app-title">
     <div>
         <h1><i class="fa fa-user-plus"></i> Sajili Mkopaji</h1>
@@ -14,11 +30,11 @@
         <div class="tile">
             <div class="row">
                 <div class="col-lg-6">
-                <?php helper('form') ?>
+                    <?php helper('form') ?>
                     <form method="post" id="fomu" action="/sajilimtumiaji" enctype="multipart/form-data">
-                    <?= session()->getFlashdata('error') ?>
-                    <?= validation_list_errors() ?>
-                    <?= csrf_field() ?>
+                        <?= session()->getFlashdata('error') ?>
+                        <?= validation_list_errors() ?>
+                        <?= csrf_field() ?>
                         <div class="form-group">
                             <label for="jina-lakwanza">Jina la kwanza</label>
                             <input class="form-control" required id="jina-lakwanza" name="jina-lakwanza" type="text" aria-describedby="emailHelp" placeholder="Weka jina la kwanza">
@@ -63,7 +79,7 @@
                             <input class="form-control" required id="jina-lakwanza" name="kata" type="text" placeholder="Ingiza kata">
                         </div>
                         <div class="form-group">
-                            <label for="jina-lakwanza">Kiji Anachoishi</label>
+                            <label for="jina-lakwanza">Kijiji Anachoishi</label>
                             <input class="form-control" required id="jina-lakwanza" name="kijiji" type="text" placeholder="Ingiza kijiji">
                         </div>
 

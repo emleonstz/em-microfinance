@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class Guarantor extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'guarantors';
+    protected $table            = 'guarantor';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';

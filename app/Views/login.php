@@ -44,21 +44,17 @@
             <input class="form-control" name="email" type="text" placeholder="weka barua pepe" autofocus>
           </div>
           <div class="form-group">
-            <label class="control-label">PASSWORD</label>
+            <label class="control-label">NENO LA SIRI</label>
             <input class="form-control" name="password" type="password" placeholder="weka neno la siri">
           </div>
           <div class="form-group">
             <div class="utility">
-              <div class="animated-checkbox">
-                <label>
-                  <input type="checkbox"><span class="label-text">Stay Signed in</span>
-                </label>
-              </div>
-              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Forgot Password ?</a></p>
+              
+              <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Umesahau neno la siri ?</a></p>
             </div>
           </div>
           <div class="form-group btn-container">
-            <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
+            <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>INGIA</button>
           </div>
         </form>
       <?php else : ?>

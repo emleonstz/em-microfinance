@@ -40,6 +40,12 @@ class MikopoModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
+    public function getLastItemId(){
+        $query = $this->db->query("SELECT `id` FROM `loans` ORDER BY `id` ASC LIMIT 1");
+        $result = $query->getRowArray();
+        return $result;
+    }
+
     public function getOverDueLoansbyUser($userid,$microfinanceid){
         $now = time();
         $query = $this->db->query("SELECT * FROM `loans` WHERE '$now'>`duration` AND `client_id` = ? AND `microfinance_id` = ? AND `unpaid_amount` != 0",[$userid,$microfinanceid],true);
