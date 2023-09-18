@@ -1,10 +1,14 @@
+<?php 
+use App\Controllers\Functions;
+$fun = new Functions;
+?>
 <style>
     /*profile page*/
 
     .left-profile-card .user-profile {
         width: 100px;
         height: 100px;
-        border-radius: 50%;
+        border-radius: 10%;
         margin: auto;
         margin-bottom: 20px;
     }
@@ -58,13 +62,13 @@
     <div class="app-title">
         <div>
             <h1><i class="fa fa-user-plus"></i> Tazama Mkopo</h1>
-            <p>Tafadahli Weka taarifa za mkopaji kwa usahihi</p>
+            <p>Kumbukumbu ya mkopo: </p>
         </div>
-        <ul class="app-breadcrumb breadcrumb">
-            <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-            <li class="breadcrumb-item">Mikopo</li>
-            <li class="breadcrumb-item"><a href="#">Tazama</a></li>
-        </ul>
+        <div>
+            <a href="/ratibamalipo/<?= urlencode(base64_encode($fun->encrypt($taarifaZamkopo['id']))) ?>" class="btn btn-info ">pakua ratiba ya malipo</a>
+            <button class="btn btn-success ">Lipa mkopo</button>
+        </div>
+
     </div>
     <?php if (!empty(session()->get('ujumbe'))) : ?>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -87,24 +91,24 @@
             <div class="card left-profile-card">
                 <div class="card-body">
                     <div class="text-center">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="user-profile">
-                        <h3>John Doe</h3>
-                        <p>World of Internet</p>
-                        <div class="d-flex align-items-center justify-content-center mb-3">
-                            <i class="fas fa-star text-info"></i>
-                            <i class="fas fa-star text-info"></i>
-                            <i class="fas fa-star text-info"></i>
-                            <i class="fas fa-star text-info"></i>
-                            <i class="fas fa-star text-info"></i>
-                        </div>
+                        <img src="<?= $mkopaji['pasport'] ?>" alt="" class="user-profile">
+                        <h3><?= $mkopaji['full_name']." ".$mkopaji['middle_name']." ".$mkopaji['last_name'] ?></h3>
+                        <p>Mkopaji</p>
                     </div>
                     <div class="personal-info">
-                        <h3>Personal Information</h3>
+                        <h3>Taarifa za Mkopo huu</h3>
+                        
                         <ul class="personal-list">
-                            <li><i class="fas fa-briefcase "></i><span>Web Designer</span></li>
-                            <li><i class="fas fa-map-marker-alt "></i><span> New York</span></li>
-                            <li><i class="far fa-envelope "></i><span>like @example.com</span></li>
-                            <li><i class="fas fa-mobile "></i><span>1234564343</span></li>
+                            <li>Jumla Kiasi kilichokopwa: <br> <?= $fun->format_currency($taarifaZamkopo['principal_amount']) ?></li>
+                            <hr>
+                            <li>Jumla Kiasi cha kurejesha: <br><?= $fun->format_currency($taarifaZamkopo['payment_amount']) ?></li>
+                            <hr>
+                            <li>Tarehe ya kuchukua Mkopo: <br><?= date("F d/Y H:i A",strtotime($taarifaZamkopo['borrowing_date'])) ?></li>
+                            <hr>
+                            <li>Mwisho wa kurejesha: <br><?= date("F d/Y H:i A",$taarifaZamkopo['duration']) ?></li>
+                            <hr>
+                            <li>Mkopaji atalipa kiasi cha <?= $fun->format_currency($taarifaZamkopo['kiasi_kwa_awamu']) ?> <br> kila baada ya <?= $taarifaZamkopo['kulipa_kwa_kila']?>  mara <?= $taarifaZamkopo['idadi_malipo']?> ndani ya miezi <?= $taarifaZamkopo['ndani_miezi']?> kutoka katika tarehe ya kuchukua <?= date("F d/Y H:i A",strtotime($taarifaZamkopo['borrowing_date'])) ?> mpaka tarehe ya mwisho wa malipo tarehe <?= date("F d/Y H:i A",$taarifaZamkopo['duration']) ?>.</li>
+
                         </ul>
                     </div>
 
@@ -112,17 +116,16 @@
             </div>
         </div>
         <div class="col-lg-9">
-            
+
             <div class="d-flex justify-content-end">
-                <button class="btn btn-info mx-2">pakua ratiba ya malipo</button>
-                <button class="btn btn-success mx-2">Lipa mkopo</button>
+                <h5>Mwisho wa kulipa <?= date("F d/Y H:i A",$taarifaZamkopo['duration']) ?></h5>
             </div>
             <div class="row my-4">
                 <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Jumla Deni</h5>
-                            <p class="card-text">10000</p>
+                            <p class="card-text"><?= $fun->format_currency($taarifaZamkopo['payment_amount']) ?></p>
 
                         </div>
                     </div>
@@ -131,7 +134,11 @@
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Kiasi kilicholipwa</h5>
-                            <p class="card-text">10000</p>
+                            <p class="card-text"><?php if(! empty($jumla_kalipa) && is_array($jumla_kalipa)){
+                                echo (isset($jumla_kalipa['num']))?$fun->format_currency($jumla_kalipa['num']):$fun->format_currency(0);
+                            }else{
+                                echo $fun->format_currency(0);
+                            } ?></p>
 
                         </div>
                     </div>
@@ -139,8 +146,8 @@
                 <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Kiasi kilichosalia</h5>
-                            <p class="card-text">10000</p>
+                            <h5 class="card-title">Deni lililosalia</h5>
+                            <p class="card-text"><?= $fun->format_currency($taarifaZamkopo['unpaid_amount']) ?></p>
 
                         </div>
                     </div>
@@ -148,16 +155,100 @@
             </div>
             <div class="my-2">
                 <ul class="list-group list-group-horizontal-md">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Hali ya Mkopo <span class="badge badge-<?php
+                        $num = (isset($jumla_kalipa['num']))?$jumla_kalipa['num']:0;
+                        if($num = 0){
+                            echo 'warning';
+                        }elseif($taarifaZamkopo['payment_amount']-$num != 0 && $taarifaZamkopo['payment_amount'] != $num && $taarifaZamkopo['unpaid_amount'] != 0){
+                            echo 'warning';
+                        }elseif($taarifaZamkopo['payment_amount']-$num == 0 && $taarifaZamkopo['payment_amount'] == $num && $taarifaZamkopo['unpaid_amount'] == 0){
+                            echo 'success';
+                        }elseif(time()>$taarifaZamkopo['duration'] && $taarifaZamkopo['payment_amount']-$num != 0 && $taarifaZamkopo['payment_amount'] != $num && $taarifaZamkopo['unpaid_amount'] != 0){
+                            echo 'danger';
+                        } 
+                    ?>">
+                    <?php
+                        $num = (isset($jumla_kalipa['num']))?$jumla_kalipa['num']:0;
+                        if($num == 0){
+                            echo "Malipo hayajafanyika";
+                        }elseif($taarifaZamkopo['payment_amount']-$num != 0 && $taarifaZamkopo['payment_amount'] != $num && $taarifaZamkopo['unpaid_amount'] != 0){
+                            echo "Malipo hayajamalizika";
+                        }elseif($taarifaZamkopo['payment_amount']-$num == 0 && $taarifaZamkopo['payment_amount'] == $num && $taarifaZamkopo['unpaid_amount'] == 0){
+                            echo "Malipo yamekamilika";
+                        }elseif(time()>$taarifaZamkopo['duration'] && $taarifaZamkopo['payment_amount']-$num != 0 && $taarifaZamkopo['payment_amount'] != $num && $taarifaZamkopo['unpaid_amount'] != 0){
+                            echo "Mkopo umepitilza muda wa malipo";
+                            
+                        } 
+                    ?>
+                    </span></li>
+                    <li class="list-group-item">Riba iliyoupatikana: <?= $fun->format_currency($taarifaZamkopo['payment_amount']-$taarifaZamkopo['principal_amount']) ?></li>
+                    <li class="list-group-item"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#invoiceModal"><i class="fa fa-eye"></i>Mali ya dhamana</button></li>
                 </ul>
+
             </div>
             <div class="card right-profile-card">
                 <div class="card-header alert-primary">
                     <h3>Historia ya malipo</h3>
                 </div>
                 <div class="card-body">
+                    <div class="tile">
+                        <h3 class="tile-title">Malipo</h3>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Siku ya malipo</th>
+                                        <th>kiasi kilicholipwa</th>
+                                        <th>kiasi kilichobaki</th>
+                                        <th>malipo yajayo</th>
+                                        <th>Kitendo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1000000000</td>
+                                        <td>1000000000</td>
+                                        <td>@mdo</td>
+                                        <td>Otto</td>
+                                        <td><button type="button" class="btn btn-primary" >Tazama Ankara</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1000000000</td>
+                                        <td>1000000000</td>
+                                        <td>@mdo</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- modal dhamana -->
+                            <div class="modal fade" id="invoiceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Mali ya dhamana</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p><strong>Mali:</strong> <?= $taarifaZamkopo['assets_name'] ?></p>
+                                            <p><strong>Maelezo:</strong> <?= $taarifaZamkopo['asset_descriptions'] ?></p>
+                                            <hr>
+                                            <p>Picha ya mali</p>
+                                            <img src="<?= $taarifaZamkopo['asset_image']?>" alt="pichayamali" width="100%" height="300px" style="object-fit: contain;">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Funga</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>

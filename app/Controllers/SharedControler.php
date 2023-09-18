@@ -11,10 +11,12 @@ class SharedControler extends BaseController
 {
   private $usersmodel;
   private $key;
+  private $stupidEncrypt;
   public function __construct()
   {
     $this->usersmodel = new UsersModel();
-    $this->key = "APoKOStqiYfLkfi0AQOLbz0uziu";
+    $this->key = "-1neMIEOcfJ?,k(";
+    $this->stupidEncrypt = new SimpleEncryption($this->key);
   }
   public function index()
   {
@@ -23,17 +25,15 @@ class SharedControler extends BaseController
   //stupid ecn
   function simpleEncrypt($text, $key = null)
   {
-    $key = ($key == null) ? $this->key : $key;
-    $ciphertext = base64_encode($text . $key);
+    
+    $ciphertext = $this->stupidEncrypt->encrypt($text);
     return $ciphertext;
   }
 
   function simpleDecrypt($ciphertext, $key = null)
   {
-    $key = ($key == null) ? $this->key : $key;
-    $plaintext = base64_decode($ciphertext);
-    $key_len = strlen($key);
-    $plaintext = substr($plaintext, 0, -$key_len);
+
+    $plaintext = $this->stupidEncrypt->decrypt($ciphertext);
     return $plaintext;
   }
   function convertNumberToSwahili($num)
@@ -244,6 +244,9 @@ class SharedControler extends BaseController
     {
         $f = new NumberFormatter($lang, \NumberFormatter::CURRENCY);
         return $f->format($val);
+    }
+    function kutoa($a,$b) : int {
+      return $a-$b;
     }
   //  
 }

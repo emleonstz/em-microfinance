@@ -41,7 +41,7 @@ class MikopoModel extends Model
     protected $afterDelete    = [];
 
     public function getLastItemId(){
-        $query = $this->db->query("SELECT `id` FROM `loans` ORDER BY `id` ASC LIMIT 1");
+        $query = $this->db->query("SELECT `id` FROM `loans` ORDER BY `id` DESC LIMIT 1");
         $result = $query->getRowArray();
         return $result;
     }

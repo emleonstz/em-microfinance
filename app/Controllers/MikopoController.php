@@ -8,9 +8,10 @@ use App\Controllers\SharedControler;
 use App\Controllers\AclContoller;
 use App\Models\ClientsModel;
 use App\Models\Guarantor;
+use App\Models\MalipoModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 use CodeIgniter\Files\File;
-
+use DateTime;
 
 class MikopoController extends BaseController
 {
@@ -179,7 +180,7 @@ class MikopoController extends BaseController
                         }else{
                             return redirect()->back()->with('error',"chagua aina ya malipo");
                         }
-                        $this->model->setAllowedFields(['client_id', 'principal_amount', 'duration', 'payment_amount', 'deadline_fee', 'borrowing_date', 'repayment_starts', 'unpaid_amount', 'assets_name', 'asset_descriptions', 'asset_image', 'microfinance_id', 'loan_status', 'application_status', 'ndani_miezi', 'kulipa_kwa_kila', 'idadi_malipo','malipo_yanayofuata']);
+                        $this->model->setAllowedFields(['client_id', 'principal_amount', 'duration', 'payment_amount', 'deadline_fee', 'borrowing_date', 'repayment_starts', 'unpaid_amount', 'assets_name','kiasi_kwa_awamu', 'asset_descriptions', 'asset_image', 'microfinance_id', 'loan_status', 'application_status', 'ndani_miezi', 'kulipa_kwa_kila', 'idadi_malipo','malipo_yanayofuata']);
                         $calculator = $this->shared->kikokotooMkopo($post['kiasi_chakukopa'],$post['riba'],$post['idadi_ya_muda'],strtolower($post['ainaYaMuda']),$post['tareheYaKuanza']);
                         $data = [
                             'client_id'=>$mokopajid, 
@@ -198,6 +199,7 @@ class MikopoController extends BaseController
                             'application_status'=>"Pending", 
                             'ndani_miezi'=>$post['idadi_ya_muda'], 
                             'kulipa_kwa_kila'=>$post['ainaYaMuda'], 
+                            'kiasi_kwa_awamu'=>($post['ainaYaMuda']=="Wiki")?$post['kiasi_kulipa_wiki']:$post['kiasi_kulipa_mwezi'],
                             'idadi_malipo'=>$mara,
                             'malipo_yanayofuata'=>($post['ainaYaMuda']=="Mwezi")?$calculator['tareheKuanzaKulipamwezi']:$calculator['tareheKuanzaKulipaWiki']
                         ];
@@ -247,11 +249,153 @@ class MikopoController extends BaseController
                 $hajamalizika = $model->getincompletengLoansbyUser($mokopajid, $this->currentMicrofinance['id']);
                 $model = new ClientsModel();
                 $mokopajiInfo = $model->where('id', $mokopajid, true)->first();
+                $model = new MalipoModel();
+                $malipo =  $model->getMalipo($mokopajid,$mokoId,$this->currentMicrofinance['id']);
+                $jumlailolipwa = $model->getTotalMalipo($mokopajid,$mokoId,$this->currentMicrofinance['id']);
                 $data['mkopaji'] = $mokopajiInfo;
                 $data['wadhmaini'] = $wadhamin;
                 $data['taarifaZamkopo'] = $taarifaZamkopo;
+                $data['malipo_ya_kopo'] = $malipo;
+                $data['jumla_kalipa']=$jumlailolipwa;
                 
                 return  view('app_head', $data) . view($this->currentpage . 'tazama') . view('app_footer');
+            } else {
+                throw new PageNotFoundException("hatukuweza kupata mtumiaji unayemtafuta");
+            }
+        } else {
+            return view('app_head') . view('notfound') . view('app_footer');
+        } 
+    }
+
+    public function ratibaYaMalipo($id){
+        $id = $id;
+        $acl = new AclContoller;
+        $acl->ruhusu('mhasibu');
+        $acl->ruhusu('meneja');
+        $acl->ruhusu('mapokezi');
+        $acl->ruhusu('mkusanyaji');
+        $acl->ruhusu('afisa_mkopo');
+        $acl->kwenyepage($this->currentpage . 'orodha');
+        $acl->addPerm('add');
+        if ($acl->amerusiwa($this->currentUser['system_role'], $this->currentpage . 'orodha', 'add')) {
+            $mokoId =  $this->shared->simpleDecrypt(base64_decode($id));
+            if (is_numeric($mokoId)) {
+                $taarifaZamkopo = $this->model->where('id',$mokoId,true)->first();
+                $mokopajid = $taarifaZamkopo['client_id'];
+                //user data
+                $model = new Guarantor();
+                $wadhamin = $model->getSponsersByUser($mokopajid, $this->currentMicrofinance['id']);
+                $model = new MikopoModel();
+                $mikopo_liyopitilzaMuda = $model->getOverDueLoansbyUser($mokopajid, $this->currentMicrofinance['id']);
+                $mikopo_haijaLipwa_atakidogo = $model->getHajiaguswaLoansbyUser($mokopajid, $this->currentMicrofinance['id']);
+                $madeniyote = $model->getAllLoansbyUser($mokopajid, $this->currentMicrofinance['id']);
+                $hajamalizika = $model->getincompletengLoansbyUser($mokopajid, $this->currentMicrofinance['id']);
+                $model = new ClientsModel();
+                $mokopajiInfo = $model->where('id', $mokopajid, true)->first();
+                $model = new MalipoModel();
+                $malipo =  $model->getMalipo($mokopajid,$mokoId,$this->currentMicrofinance['id']);
+                $jumlailolipwa = $model->getTotalMalipo($mokopajid,$mokoId,$this->currentMicrofinance['id']);
+                $mpdf = new \Mpdf\Mpdf();
+                $mpdf->WriteHTML('
+                    <div style="text-align: center;">
+                        <h3><u>RATIBA YA MALIPO YA MKOPO</u></h3>
+                    </div>
+                    </div>');
+                    $mpdf->WriteHTML('<p>Mkataba huu unaeleza masharti na kanuni ambazo mkopaji lazima afuate ili kua mkopaji halali wa ' . strtoupper($this->currentMicrofinance['name']) . '. Mkopaji lazima asajiliwe kakita mfumo wetu ilikupata fomu hii na kuambatanisha vitu vinavyohitajika.</p>');
+                    $tdata = '<table border="1" width="100%" cellspacing="0" cellpadding="5">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Tarehe ya malopo </th>
+                    <th>Kiasi cha kulipwa</th>
+                    <th>Kiasi kitakacho salia (baada ya kulipa)</th>
+                    <th>Amelipa (weka tiki)</th>
+                    <th>Sahihi ya karani/mhasibu/Afisa Mikopo (aliyepokea fedha za malipo)  </th>
+                  </tr>
+                </thead><tbody>';
+                $mpdf->WriteHTML($tdata);
+                $datewiki = new DateTime($taarifaZamkopo['borrowing_date']);
+                $num = $taarifaZamkopo['idadi_malipo'];
+                $index = 1;
+                $sum =  0;
+                $deni = $taarifaZamkopo['payment_amount'];
+                for ($i=0; $i < $num; $i++) { 
+                    if($taarifaZamkopo['kulipa_kwa_kila'] == "Wiki"){
+                        $date = $datewiki->modify("+7 days");
+                        $sum =  $sum + $taarifaZamkopo['kiasi_kwa_awamu'];
+                        $deni -= $taarifaZamkopo['kiasi_kwa_awamu'];
+                        $mpdf->WriteHTML('
+                        <tr>
+                        <td>'.$index++.'</td>
+                        <td>' . $date->format('F, d Y'). '</td>
+                        <td>' . $this->shared->to_currency($taarifaZamkopo['kiasi_kwa_awamu'],'sw-Tz') . '</td>
+                        <td>'.$this->shared->to_currency($deni,'sw-Tz').'</td>
+                        <td><br></td>
+                        <td><br></td>
+                        <tr>
+                        ');
+                    }else{
+                        $date = $datewiki->modify("+1 months");
+                        $sum =  $sum + $taarifaZamkopo['kiasi_kwa_awamu'];
+                        $deni -= $taarifaZamkopo['kiasi_kwa_awamu'];
+                        $mpdf->WriteHTML('
+                        <tr>
+                        <td>'.$index++.'</td>
+                        <td>' . $date->format('F, d Y'). '</td>
+                        <td>' . $this->shared->to_currency($taarifaZamkopo['kiasi_kwa_awamu'],'sw-Tz') . '</td>
+                        <td>'.$this->shared->to_currency($deni,'sw-Tz').'</td>
+                        <td><br></td>
+                        <td><br></td>
+                        <tr>
+                        ');
+                    }
+                }
+                $mpdf->WriteHTML('<tr>
+                <td colspan="2">****Mwisho****</td>
+                <td>' . $this->shared->to_currency($sum,'sw-Tz'). '</td>
+                <td>'.$this->shared->to_currency($deni,'sw-Tz').'</td>
+                <td colspan="2">****Mwisho wa kulipa****</td>
+                <tr>');
+                
+                $mpdf->WriteHTML('</tbody></table>');
+                $mpdf->OutputHttpDownload('Ratiba_ya_' . strtoupper($mokopajiInfo['full_name'] . '_' . $mokopajiInfo['middle_name'] . '_' . $mokopajiInfo['last_name']) . '.pdf');
+            } else {
+                throw new PageNotFoundException("hatukuweza kupata mtumiaji unayemtafuta");
+            }
+        } else {
+            return view('app_head') . view('notfound') . view('app_footer');
+        }    
+    }
+
+    public function baruaYakuombaMkopo($id){
+        $id = $id;
+        $acl = new AclContoller;
+        $acl->ruhusu('mhasibu');
+        $acl->ruhusu('meneja');
+        $acl->ruhusu('mapokezi');
+        $acl->ruhusu('mkusanyaji');
+        $acl->ruhusu('afisa_mkopo');
+        $acl->kwenyepage($this->currentpage . 'orodha');
+        $acl->addPerm('add');
+        if ($acl->amerusiwa($this->currentUser['system_role'], $this->currentpage . 'orodha', 'add')) {
+            $mokoId =  $this->shared->simpleDecrypt(base64_decode($id));
+            if (is_numeric($mokoId)) {
+                $taarifaZamkopo = $this->model->where('id',$mokoId,true)->first();
+                $mokopajid = $taarifaZamkopo['client_id'];
+                //user data
+                $model = new Guarantor();
+                $wadhamin = $model->getSponsersByUser($mokopajid, $this->currentMicrofinance['id']);
+                $model = new MikopoModel();
+                $mikopo_liyopitilzaMuda = $model->getOverDueLoansbyUser($mokopajid, $this->currentMicrofinance['id']);
+                $mikopo_haijaLipwa_atakidogo = $model->getHajiaguswaLoansbyUser($mokopajid, $this->currentMicrofinance['id']);
+                $madeniyote = $model->getAllLoansbyUser($mokopajid, $this->currentMicrofinance['id']);
+                $hajamalizika = $model->getincompletengLoansbyUser($mokopajid, $this->currentMicrofinance['id']);
+                $model = new ClientsModel();
+                $mokopajiInfo = $model->where('id', $mokopajid, true)->first();
+                $model = new MalipoModel();
+                $malipo =  $model->getMalipo($mokopajid,$mokoId,$this->currentMicrofinance['id']);
+                $jumlailolipwa = $model->getTotalMalipo($mokopajid,$mokoId,$this->currentMicrofinance['id']);
+                
             } else {
                 throw new PageNotFoundException("hatukuweza kupata mtumiaji unayemtafuta");
             }
