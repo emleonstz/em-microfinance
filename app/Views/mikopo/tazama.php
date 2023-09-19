@@ -65,8 +65,14 @@ $fun = new Functions;
             <p>Kumbukumbu ya mkopo: </p>
         </div>
         <div>
-            <a href="/ratibamalipo/<?= urlencode(base64_encode($fun->encrypt($taarifaZamkopo['id']))) ?>" class="btn btn-info ">pakua ratiba ya malipo</a>
+            <?php if($taarifaZamkopo['application_status']=="Pending"): ?>
+                <a href="/baruayamaombi/<?= urlencode(base64_encode($fun->encrypt($taarifaZamkopo['id']))) ?>" class="btn btn-danger "><i class="fa fa-trash"></i>Futa maombi haya</a>
+            <a href="/baruayamaombi/<?= urlencode(base64_encode($fun->encrypt($taarifaZamkopo['id']))) ?>" class="btn btn-info "><i class="fa fa-print"></i>pakua barua ya mkopo</a>
+            <a href="/baruayamaombi/<?= urlencode(base64_encode($fun->encrypt($taarifaZamkopo['id']))) ?>" class="btn btn-success "><i class="fa fa-check"></i>Thibitisha mkopo huu</a>
+            <?php else: ?>
+                <a href="/ratibamalipo/<?= urlencode(base64_encode($fun->encrypt($taarifaZamkopo['id']))) ?>" class="btn btn-info ">pakua ratiba ya malipo</a>
             <button class="btn btn-success ">Lipa mkopo</button>
+            <?php endif ?>
         </div>
 
     </div>

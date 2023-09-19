@@ -23,6 +23,8 @@ $routes->get('/calc', 'MikopoController::kototoa',['filter'=>'oauth']);
 $routes->post('/ombamkopo', 'MikopoController::processMkopo',['filter'=>'oauth']);
 $routes->get('/tazamamkopo/(:any)', 'MikopoController::tazamaMkopo/$1',['filter'=>'oauth']);
 $routes->get('/ratibamalipo/(:any)', 'MikopoController::ratibaYaMalipo/$1',['filter'=>'oauth']);
+$routes->get('/baruayamaombi/(:any)', 'MikopoController::baruaYakuombaMkopo/$1',['filter'=>'oauth']);
+
 
 
 

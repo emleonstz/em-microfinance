@@ -12,6 +12,7 @@ use App\Models\MalipoModel;
 use CodeIgniter\Exceptions\PageNotFoundException;
 use CodeIgniter\Files\File;
 use DateTime;
+use Mpdf\Mpdf;
 
 class MikopoController extends BaseController
 {
@@ -394,8 +395,84 @@ class MikopoController extends BaseController
                 $mokopajiInfo = $model->where('id', $mokopajid, true)->first();
                 $model = new MalipoModel();
                 $malipo =  $model->getMalipo($mokopajid,$mokoId,$this->currentMicrofinance['id']);
+                $kiunganishi = ($taarifaZamkopo['kulipa_kwa_kila']=="Mwezi")?"wa":"ya";
                 $jumlailolipwa = $model->getTotalMalipo($mokopajid,$mokoId,$this->currentMicrofinance['id']);
-                
+                $office = (isset($this->currentMicrofinance['postal_box']))?$this->currentMicrofinance['postal_box']:$this->currentMicrofinance['office_no'];
+                $mpdf = new \Mpdf\Mpdf();
+                $mpdf->WriteHTML('
+                    <div style="text-align: center;">
+                        <h3><u>'.strtoupper($this->currentMicrofinance['name'])." ".strtoupper($office)." ".strtoupper($this->currentMicrofinance['region']).' MKATABA WA KUOMBA MKOPO</u></h3>
+                    </div>
+                    </div>');
+                $mpdf->WriteHTML('<p>Mkataba huu unamhusisha ndungu <strong>'.$mokopajiInfo['full_name']." ".$mokopajiInfo['middle_name']." ".$mokopajiInfo['last_name'].'</strong> ambaye atatambulika kama <strong>Mkopaji</strong> na <strong>'.$this->currentMicrofinance['name'].'</strong> ambayo itatambulika kama <strong>Mkopeshaji</strong> </p>');
+                $mpdf->writeHTML('<p>Mkopaji anakubaliana kupokea kutoka kwa Mkopeshaji kiasi cha mkopo wa '.$this->shared->to_currency($taarifaZamkopo['principal_amount'],'sw-Tz').' kiasi kwa maneno:____________________________ siku ya leo tarehe __________________________ na atarejesha kiasi cha '.$this->shared->to_currency($taarifaZamkopo['payment_amount'],'sw-Tz').' kiasi kwa maneno_______________________________________ kwa utaratibu  ulioainishwa hapa chini.</p>');
+                $mpdf->WriteHTML('<h3>1. Makubaliano ya Malipo</h3>');
+                $mpdf->WriteHTML('<p>Mkopaji atalipa mkopo huu katika viwango vya kila '.$taarifaZamkopo['kulipa_kwa_kila'].' kiasi cha  '.$this->shared->to_currency($taarifaZamkopo['kiasi_kwa_awamu'],'sw-Tz').' kuanzia '.$taarifaZamkopo['kulipa_kwa_kila'].' '.$kiunganishi.' kwanza baada ya kupokea mkopo huu ambapo ya malipo ya kwanza ya taanza kupokelewa tarehe '.date("d/F/Y",strtotime($taarifaZamkopo['repayment_starts'])).' mkopo huu utahesabika kama mkopo uliopitiliza muda wa malipo ikiwa malipo ya kulipa kwa awamu hayatakamilisha malipo ya deni zima ifikapo tahera '.date("d/F/Y",$taarifaZamkopo['duration']).'.</p>');
+                $mpdf->WriteHTML('<h3>2. Muda wa mkopo</h3>');
+                $mpdf->WriteHTML('<p>Mkopo huu utalipwa ndani ya muda wa miezi '.$taarifaZamkopo['ndani_miezi'].' kutoka tarehe ya kusainiwa kwa mkataba huu.</p>');
+                $mpdf->WriteHTML('<h3>4. Malipo ya Mapema</h3>');
+                $mpdf->WriteHTML('<p>Mkopaji anaweza kulipia mkopo huu kabla ya muda wa mwisho wa mkataba kwa riba inayostahili malipo ya awali.</p>');
+                $mpdf->WriteHTML('<h3>3. Dhamana ya mkopo</h3>');
+                $mpdf->WriteHTML('<p>Mkopaji ametoa dhamana kwa mujibu wa sera za '.$this->currentMicrofinance['name'].'.</p>');
+                //futa ka vp
+                $tdata = '<table border="1" width="100%" cellspacing="0" cellpadding="5">
+                <thead>
+                  <tr>
+                    <th>Mali ya dahama </th>
+                    <th>Maelezo ya mali</th>
+                  </tr>
+                </thead><tbody>';
+                $mpdf->WriteHTML($tdata);
+                $mpdf->WriteHTML('
+            <tr>
+            <td>
+            <p>' . $taarifaZamkopo['assets_name'] . '</p><br>
+            </td>
+            <td>
+            <p>' . $taarifaZamkopo['asset_descriptions'] . '</p><br>
+            </td>
+            
+            <tr>
+            ');
+            $mpdf->WriteHTML('</tbody></table>');
+            //mwisho wa dhamna
+                $mpdf->WriteHTML('<p>Mkopaji anakubaliana kuwa ukiukaji wa mkataba huu utasababisha hatua za kisheria kwa mujibu wa sheria na sera za '.$this->currentMicrofinance['name'].'</p>');
+                $mpdf->WriteHTML('<p>Mimi '.$mokopajiInfo['full_name']." ".$mokopajiInfo['middle_name']." ".$mokopajiInfo['last_name'].'</strong> ambaye anambulika kama <strong>Mkopaji</strong> wa '.$this->currentMicrofinance['name'].' Ninakubali kuwa ' . strtoupper($this->currentMicrofinance['name']) . ' inaweza kuchukua hatua za kisheria au za kimahakama dhidi yangu ikiwa sitatimiza majukumu yangu ya kifedha kwa ' . strtoupper($this->currentMicrofinance['name']) . '.</p>');
+                $mpdf->WriteHTML('<p>Sahihi ya Mkopaji:____________________________</p>');
+                $mpdf->WriteHTML('<h3>5.TAARIFA ZA MDHAMINI</h3>');
+                //mdhamini
+                $mpdf->WriteHTML('<p>Jina Kamili: ' . $wadhamin[0]['full_name'] . ' ' . $wadhamin[0]['full_name'] . '</p>');
+                $mpdf->WriteHTML('<p>Simu: ' . $wadhamin[0]['phone'] . ' </p>');
+                $mpdf->WriteHTML('<p>Sahihi ya Mdhamini:____________________________</p>');
+                $mpdf->WriteHTML('<h3>6.Kwa matumizi ya ofisi</h3>');
+                //matumizi ya ofisi
+                $tdata = '<table border="1" width="100%" cellspacing="0" cellpadding="5">
+                <thead>
+                  <tr>
+                    <th>Afisa Mkikopo </th>
+                    <th>muhuri wa ofisi</th>
+                  </tr>
+                </thead><tbody>';
+                $mpdf->WriteHTML($tdata);
+                $mpdf->WriteHTML('
+            <tr>
+            <td>
+            <p>Afisa mikopo ' . $this->currentMicrofinance['name'] . '</p><br>
+            <p>Jina:_________________________ </p><br>
+            <p>Sahihi:________________________ </p><br>
+            <p>Tarehe:________________________ </p><br>
+            </td>
+            <td>
+            <br>
+            <br>
+            <br>
+            <br>
+            </td>
+            
+            <tr>
+            ');
+            $mpdf->WriteHTML('</tbody></table>');
+            $mpdf->OutputHttpDownload('Barua_ya_' . strtoupper($mokopajiInfo['full_name'] . '_' . $mokopajiInfo['middle_name'] . '_' . $mokopajiInfo['last_name']) . '.pdf');
             } else {
                 throw new PageNotFoundException("hatukuweza kupata mtumiaji unayemtafuta");
             }
