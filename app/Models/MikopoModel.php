@@ -70,5 +70,29 @@ class MikopoModel extends Model
         $result = $query->getResultArray();
         return $result;
     }
-    
+    public function leteMikopYote($microfinanceid){
+        $query = $this->db->query("SELECT loans.*,clients.full_name,clients.middle_name,clients.last_name FROM `loans` INNER JOIN clients ON loans.microfinance_id = ? AND clients.id = loans.client_id ORDER BY loans.borrowing_date DESC;",[$microfinanceid],true);
+        $result = $query->getResultArray();
+        return $result;
+    }
+    public function leteMikopHaijamalizika($microfinanceid){
+        $query = $this->db->query("SELECT loans.*,clients.full_name,clients.middle_name,clients.last_name FROM `loans` INNER JOIN clients ON loans.microfinance_id = ? AND clients.id = loans.client_id AND loans.unpaid_amount != 0 AND loans.application_status = 'Accepted' ORDER BY loans.borrowing_date DESC;",[$microfinanceid],true);
+        $result = $query->getResultArray();
+        return $result;
+    }
+    public function leteMikoHaijalipwa($microfinanceid){
+        $query = $this->db->query("SELECT loans.*,clients.full_name,clients.middle_name,clients.last_name FROM `loans` INNER JOIN clients ON loans.microfinance_id = ? AND clients.id = loans.client_id AND loans.unpaid_amount = loans.payment_amount AND loans.application_status = 'Accepted' ORDER BY loans.borrowing_date DESC;",[$microfinanceid],true);
+        $result = $query->getResultArray();
+        return $result;
+    }
+    public function leteMikopPending($microfinanceid){
+        $query = $this->db->query("SELECT loans.*,clients.full_name,clients.middle_name,clients.last_name FROM `loans` INNER JOIN clients ON loans.microfinance_id = ? AND clients.id = loans.client_id AND loans.application_status != 'Accepted' ORDER BY loans.borrowing_date DESC;",[$microfinanceid],true);
+        $result = $query->getResultArray();
+        return $result;
+    }
+    public function leteMikopIlopitiliza($microfinanceid){
+        $query = $this->db->query("SELECT loans.*,clients.full_name,clients.middle_name,clients.last_name FROM `loans` INNER JOIN clients ON loans.microfinance_id = ? AND clients.id = loans.client_id AND DATE(NOW())>loans.duration AND loans.payment_amount - loans.unpaid_amount != loans.payment_amount AND loans.application_status = 'Accepted' ORDER BY loans.borrowing_date DESC;",[$microfinanceid],true);
+        $result = $query->getResultArray();
+        return $result;
+    }
 }

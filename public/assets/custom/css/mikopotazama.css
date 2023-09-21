@@ -1,0 +1,101 @@
+/*profile page*/
+
+.left-profile-card .user-profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.left-profile-card h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+.left-profile-card p {
+    margin-bottom: 5px;
+}
+
+.left-profile-card .progress-bar {
+    background-color: var(--main-color);
+}
+
+.personal-info {
+    margin-bottom: 30px;
+}
+
+.personal-info .personal-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.personal-list li {
+    margin-bottom: 5px;
+}
+
+.personal-info h3 {
+    margin-bottom: 10px;
+}
+
+.personal-info p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.personal-info i {
+    font-size: 15px;
+    color: var(--main-color);
+    ;
+    margin-right: 15px;
+    width: 18px;
+}
+#captcha-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#captcha-text {
+    font-size: 20px;
+    margin-right: 10px;
+}
+#captcha-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#captcha-text {
+    font-size: 24px;
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;;
+    display: inline-block;
+    transform: rotate(-2deg); /* Tilt the text a bit */
+}
+.failed {
+    color: red;
+}
+
+
+.shake {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(1deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

@@ -24,6 +24,20 @@ $routes->post('/ombamkopo', 'MikopoController::processMkopo',['filter'=>'oauth']
 $routes->get('/tazamamkopo/(:any)', 'MikopoController::tazamaMkopo/$1',['filter'=>'oauth']);
 $routes->get('/ratibamalipo/(:any)', 'MikopoController::ratibaYaMalipo/$1',['filter'=>'oauth']);
 $routes->get('/baruayamaombi/(:any)', 'MikopoController::baruaYakuombaMkopo/$1',['filter'=>'oauth']);
+$routes->get('/futamaombi/(:any)', 'MikopoController::futaMkopo/$1',['filter'=>'oauth']);
+$routes->get('/tazamamalipo/(:any)', 'MikopoController::tazamaMalipo/$1',['filter'=>'oauth']);
+$routes->get('/tazamamikopo', 'MikopoController::orodhaYaMikopo',['filter'=>'oauth']);
+$routes->get('/mikopoisiyomalizika', 'MikopoController::orodhaYaMikopoHajimalizika',['filter'=>'oauth']);
+$routes->get('/mikopoisiyolipwa', 'MikopoController::orodhaYaMikopoHajalipwa',['filter'=>'oauth']);
+$routes->get('/maombiyanayosubiri', 'MikopoController::orodhaYaMikopoPending',['filter'=>'oauth']);
+$routes->get('/iliyopitiliza', 'MikopoController::orodhaYaMikopoPitiliza',['filter'=>'oauth']);
+$routes->post('/lipamkopo', 'MikopoController::lipaMkopo',['filter'=>'oauth']);
+
+
+
+
+
+
 
 
 

@@ -36,45 +36,9 @@ class SharedControler extends BaseController
     $plaintext = $this->stupidEncrypt->decrypt($ciphertext);
     return $plaintext;
   }
-  function convertNumberToSwahili($num)
-  {
-    // Define the names of the digits and the tens in Swahili
-    $digits = array("sifuri", "moja", "mbili", "tatu", "nne", "tano", "sita", "saba", "nane", "tisa");
-    $tens = array("", "kumi", "ishirini", "thelathini", "arobaini", "hamsini", "sitini", "sabini", "themanini", "tisini");
-
-    // Check if the number is valid
-    if ($num < 0 || $num > 99) {
-      return "Invalid number";
-    }
-
-    // Check if the number is zero
-    if ($num == 0) {
-      return $digits[0];
-    }
-
-    // Split the number into tens and ones
-    $ten = floor($num / 10);
-    $one = $num % 10;
-
-    // Build the Swahili word
-    $word = "";
-
-    // Add the ten if it is not zero
-    if ($ten > 0) {
-      $word .= $tens[$ten];
-    }
-
-    // Add the one if it is not zero
-    if ($one > 0) {
-      // Add a separator if both ten and one are not zero
-      if ($ten > 0) {
-        $word .= " na ";
-      }
-      $word .= $digits[$one];
-    }
-
-    // Return the word
-    return $word;
+  function removeSpecialCharacters($str) {
+    // This regular expression matches any character that's not a letter, number, or space.
+    return preg_replace('/[^a-zA-Z0-9\s]/', '', $str);
   }
   public function encrypt($plainText)
   {
@@ -82,6 +46,10 @@ class SharedControler extends BaseController
     $ciphertext = $encrypter->encrypt($plainText);
     return $ciphertext;
   }
+  function cleanVar($str) {
+    // This regular expression matches any character that's not a letter or number.
+    return preg_replace('/[^a-zA-Z0-9]/', '', $str);
+}
 
   public function decrypt($ciphertext)
   {

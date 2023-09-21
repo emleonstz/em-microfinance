@@ -572,7 +572,7 @@ helper('form')
                     <h4 class="header-title mb-3">Mikopo</h4>
                     <?php if (!empty($madeniyote) && is_array($madeniyote)) : ?>
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table" id="mikopotable">
                                 <thead>
                                     <tr>
                                         <th>#</th>
@@ -616,7 +616,7 @@ helper('form')
                                                 </span></td>
 
                                             <td>
-                                                <div class="d-flex"><a href="/tazamamkopo/<?php echo urldecode(base64_encode($fun->encrypt($mikopoyote['id']))) ?>" class="btn btn-info"><i class="fa fa-eye"></i>Tazama</a></div>
+                                                <a href="/tazamamkopo/<?php echo urldecode(base64_encode($fun->encrypt($mikopoyote['id']))) ?>" class="btn btn-info"><i class="fa fa-eye"></i>Tazama</a>
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
@@ -635,3 +635,8 @@ helper('form')
     </div>
     <!-- container -->
 </div>
+<script src="<?php echo base_url('assets/js/plugins/jquery.dataTables.min.js') ?>"></script>
+    <script src="<?php echo base_url('assets/js/plugins/dataTables.bootstrap.min.js') ?>"></script>
+    <?php if(! empty($madeniyote) && is_array($madeniyote)) : ?>
+    <script type="text/javascript">$('#mikopotable').DataTable();</script>
+    <?php endif ?>

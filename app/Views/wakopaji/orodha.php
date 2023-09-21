@@ -37,7 +37,7 @@ $fun = new Functions;
         <h3 class="tile-title">Orodha ya wakopaji</h3>
         <?php if (!empty($wakopaji) && is_array($wakopaji)) : ?>
             <div class="table-responsive">
-                <table class="table">
+                <table class="table" id="wakopajitable">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -78,3 +78,9 @@ $fun = new Functions;
         <?php endif; ?>
     </div>
 </div>
+<script src="<?php echo base_url('assets/js/plugins/jquery.dataTables.min.js') ?>"></script>
+    <script src="<?php echo base_url('assets/js/plugins/dataTables.bootstrap.min.js') ?>"></script>
+    <?php if(! empty($wakopaji) && is_array($wakopaji)) : ?>
+    <script type="text/javascript">$('#wakopajitable').DataTable();</script>
+    <?php endif ?>
+      

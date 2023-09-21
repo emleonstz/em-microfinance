@@ -244,4 +244,18 @@ class Functions extends BaseController
         $l = ($limit <= strlen($context) ? $limit : strlen($context));
         return substr(str_shuffle($context), 0, $l);
     }
+    function getUserRole(): string
+    {
+        $user = $this->shared->getCurrentUserInfo();
+        $role = $user['system_role'];
+        return $role;
+    }
+    function first_char(string $str)
+    {
+        return $str[0];
+    }
+    function getMicrofinance(){
+        $current =  $this->shared->get_user_microfinance();
+        return $current;
+    }
 }

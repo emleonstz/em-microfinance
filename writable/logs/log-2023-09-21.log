@@ -1,0 +1,820 @@
+INFO - 2023-09-21 00:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 00:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:20:02 --> CSRF token verified.
+INFO - 2023-09-21 08:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:20:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 08:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:17:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 09:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:22:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:22:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:24:03 --> CSRF token verified.
+CRITICAL - 2023-09-21 10:24:03 --> Too few arguments to function App\Controllers\MikopoController::lipaMkopo(), 0 passed in C:\xampp\htdocs\microfinace\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MikopoController.php on line 732.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->lipaMkopo()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 10:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:24:45 --> CSRF token verified.
+INFO - 2023-09-21 10:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:25:54 --> CSRF token verified.
+CRITICAL - 2023-09-21 10:25:54 --> openssl_decrypt(): IV passed is only 13 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Controllers\SimpleEncryption.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 13 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\xampp\\htdocs\\microfinace\\app\\Controllers\\SimpleEncryption.php', 41)
+ 2 APPPATH\Controllers\SimpleEncryption.php(41): openssl_decrypt('', 'aes-256-cbc', Object(SensitiveParameterValue), 1, 'kªöÀuDOO')
+ 3 APPPATH\Controllers\SharedControler.php(36): App\Controllers\SimpleEncryption->decrypt('ªˆ³GªÌW<s¦T¾¸‡=qvÙa{ªQk¶òü_äÍÛMB1í$ÉR:ëæ§E(Ë8{¤±YTê>4')
+ 4 APPPATH\Controllers\MikopoController.php(755): App\Controllers\SharedControler->simpleDecrypt('ªˆ³GªÌW<s¦T¾¸‡=qvÙa{ªQk¶òü_äÍÛMB1í$ÉR:ëæ§E(Ë8{¤±YTê>4')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->lipaMkopo()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 10:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:27:44 --> CSRF token verified.
+CRITICAL - 2023-09-21 10:27:44 --> openssl_decrypt(): IV passed is only 15 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Controllers\SimpleEncryption.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 15 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\xampp\\htdocs\\microfinace\\app\\Controllers\\SimpleEncryption.php', 41)
+ 2 APPPATH\Controllers\SimpleEncryption.php(41): openssl_decrypt('', 'aes-256-cbc', Object(SensitiveParameterValue), 1, '¹>8R2L$ª˜±5  É')
+ 3 APPPATH\Controllers\SharedControler.php(36): App\Controllers\SimpleEncryption->decrypt('„Åu:Ãî­]‡™T,44ñÜ ¾ÛHÿÊVIyàæ”`ê‹-TöÑ¬CSÜ|qmL(ŒEÐ¿1ICñD>J')
+ 4 APPPATH\Controllers\MikopoController.php(755): App\Controllers\SharedControler->simpleDecrypt('„Åu:Ãî­]‡™T,44ñÜ ¾ÛHÿÊVIyàæ”`ê‹-TöÑ¬CSÜ|qmL(ŒEÐ¿1ICñD>J')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->lipaMkopo()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 10:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:29:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:29:06 --> CSRF token verified.
+CRITICAL - 2023-09-21 10:29:06 --> openssl_decrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH\Controllers\SimpleEncryption.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_decrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'C:\\xampp\\htdocs\\microfinace\\app\\Controllers\\SimpleEncryption.php', 41)
+ 2 APPPATH\Controllers\SimpleEncryption.php(41): openssl_decrypt('', 'aes-256-cbc', Object(SensitiveParameterValue), 1, 'h“Zš«‹6q	ã	')
+ 3 APPPATH\Controllers\SharedControler.php(36): App\Controllers\SimpleEncryption->decrypt('óaÑJMQWœ
+pØqàrùÞiÓ…&ÖõzZáææ‚‘¬šxÃ-C)À‡ñ°e»¢¡Mã;óãæJâþÌ')
+ 4 APPPATH\Controllers\MikopoController.php(755): App\Controllers\SharedControler->simpleDecrypt('óaÑJMQWœ
+pØqàrùÞiÓ…&ÖõzZáææ‚‘¬šxÃ-C)À‡ñ°e»¢¡Mã;óãæJâþÌ')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->lipaMkopo()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 10:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:31:44 --> CSRF token verified.
+INFO - 2023-09-21 10:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:35:33 --> CSRF token verified.
+INFO - 2023-09-21 10:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 10:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:11:02 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:11:53 --> CSRF token verified.
+CRITICAL - 2023-09-21 11:11:53 --> Decrypting: authentication failed.
+in SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php on line 137.
+ 1 SYSTEMPATH\Encryption\Handlers\OpenSSLHandler.php(137): CodeIgniter\Encryption\Exceptions\EncryptionException::forAuthenticationFailed()
+ 2 APPPATH\Controllers\SharedControler.php(57): CodeIgniter\Encryption\Handlers\OpenSSLHandler->decrypt('17Yt7o+RRpjmCxn/qCzmEg==')
+ 3 APPPATH\Controllers\MikopoController.php(786): App\Controllers\SharedControler->decrypt('DzalmX+ImgmdTUDpGNyES2YA1txkvGJofrsbMsiwE3W0Ynoyyz3dBD44GwVy3uZI17Yt7o+RRpjmCxn/qCzmEg==')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->lipaMkopo()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:13:04 --> CSRF token verified.
+INFO - 2023-09-21 11:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:13:05 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:16:30 --> CSRF token verified.
+INFO - 2023-09-21 11:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:16:31 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:18:09 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:19:40 --> CSRF token verified.
+INFO - 2023-09-21 11:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:29:47 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:29:51 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:30:44 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:32:07 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:32:36 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:33:46 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:35:26 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:37:38 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:38:17 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:39:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:39:25 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:43:36 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:46:04 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:48:28 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:52:17 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:53:46 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:55:24 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 11:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 11:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 11:56:39 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:00:10 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:13:04 --> CSRF token verified.
+INFO - 2023-09-21 12:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 12:16:55 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\MikopoController.php on line 823.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\microfinace\\app\\Controllers\\MikopoController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MikopoController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MikopoController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\MikopoController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:17:59 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:37:42 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:39:40 --> CSRF token verified.
+INFO - 2023-09-21 12:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:39:41 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:41:09 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:41:39 --> CSRF token verified.
+INFO - 2023-09-21 12:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:41:40 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:43:39 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:44:17 --> CSRF token verified.
+INFO - 2023-09-21 12:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:44:18 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:51:39 --> CSRF token verified.
+INFO - 2023-09-21 12:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:53:03 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:53:31 --> CSRF token verified.
+INFO - 2023-09-21 12:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:55:08 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:55:40 --> CSRF token verified.
+INFO - 2023-09-21 12:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:55:41 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:56:35 --> CSRF token verified.
+INFO - 2023-09-21 12:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 12:56:36 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 12:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 12:57:13 --> CSRF token verified.
+INFO - 2023-09-21 13:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:00:13 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:00:36 --> CSRF token verified.
+INFO - 2023-09-21 13:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:00:55 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:01:31 --> CSRF token verified.
+INFO - 2023-09-21 13:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:02:01 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:02:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:02:38 --> CSRF token verified.
+INFO - 2023-09-21 13:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:02:39 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:03:18 --> CSRF token verified.
+INFO - 2023-09-21 13:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:03:19 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:04:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:04:02 --> CSRF token verified.
+INFO - 2023-09-21 13:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:34:06 --> CSRF token verified.
+INFO - 2023-09-21 13:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:34:38 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:35:24 --> CSRF token verified.
+CRITICAL - 2023-09-21 13:35:24 --> Undefined array key "id"
+in APPPATH\Controllers\MikopoController.php on line 870.
+ 1 APPPATH\Controllers\MikopoController.php(870): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\microfinace\\app\\Controllers\\MikopoController.php', 870)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->lipaMkopo()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:36:54 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:38:08 --> CSRF token verified.
+CRITICAL - 2023-09-21 13:38:08 --> Allowed fields must be specified for model: "App\Models\MikopoModel"
+in SYSTEMPATH\BaseModel.php on line 1257.
+ 1 SYSTEMPATH\BaseModel.php(1257): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\MikopoModel')
+ 2 SYSTEMPATH\BaseModel.php(925): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 4 APPPATH\Controllers\MikopoController.php(876): CodeIgniter\Model->update('1', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->lipaMkopo()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:40:06 --> CSRF token verified.
+INFO - 2023-09-21 13:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:40:07 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:41:22 --> CSRF token verified.
+INFO - 2023-09-21 13:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:41:23 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:44:18 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:45:38 --> CSRF token verified.
+INFO - 2023-09-21 13:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:45:38 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:46:21 --> CSRF token verified.
+INFO - 2023-09-21 13:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:46:23 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:49:05 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:49:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:49:49 --> CSRF token verified.
+INFO - 2023-09-21 13:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:49:51 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:50:35 --> CSRF token verified.
+INFO - 2023-09-21 13:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:50:36 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:53:45 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:54:46 --> CSRF token verified.
+INFO - 2023-09-21 13:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:54:47 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:56:04 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 13:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:56:49 --> CSRF token verified.
+INFO - 2023-09-21 13:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 13:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 13:56:49 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 14:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 14:01:25 --> CSRF token verified.
+INFO - 2023-09-21 14:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 14:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-09-21 14:01:26 --> [DEPRECATED] preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in APPPATH\Controllers\SharedControler.php on line 51.
+ 1 APPPATH\Controllers\SharedControler.php(51): preg_replace('/[^a-zA-Z0-9]/', '', null)
+ 2 APPPATH\Controllers\MikopoController.php(239): App\Controllers\SharedControler->cleanVar(null)
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MikopoController->tazamaMkopo('abc')
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MikopoController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\microfinace\\public\\index.php')
+INFO - 2023-09-21 14:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 14:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 14:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 14:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 14:06:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 14:06:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
