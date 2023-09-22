@@ -148,11 +148,11 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputFile">Picha ya Kitambulisho</label>
-                        <input class="form-control-file" required name="pichakitambulisho" id="exampleInputFile" type="file" aria-describedby="fileHelp"><small class="form-text text-muted" id="fileHelp">Pakia picha ya kitabulisho cha mkopaji ukubwa usiozidi 3mb</small>
+                        <input class="form-control-file" required name="pichakitambulisho" accept="image/*" id="exampleInputFile" type="file" aria-describedby="fileHelp"><small class="form-text text-muted" id="fileHelp">Pakia picha ya kitabulisho cha mkopaji ukubwa usiozidi 3mb</small>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputFile">Pasport size</label>
-                        <input class="form-control-file" required name="pichapasport" id="exampleInputFile" type="file" aria-describedby="fileHelp"><small class="form-text text-muted" id="fileHelp">Pakia pasipoti ya mkopaji ukubwa usiozidi 3mb</small>
+                        <input class="form-control-file" required name="pichapasport" accept="image/*" id="exampleInputFile" type="file" aria-describedby="fileHelp"><small class="form-text text-muted" id="fileHelp">Pakia pasipoti ya mkopaji ukubwa usiozidi 3mb</small>
                     </div>
                     <div class="form-group">
                         <label for="exampleTextarea">Maelezo ya ziada</label>

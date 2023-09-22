@@ -88,15 +88,15 @@ class WakopajiController extends BaseController
                 'pichakitambulisho' => [
                     'uploaded[pichakitambulisho]',
                     'max_size[pichakitambulisho,3072]',
-                    'mime_in[pichakitambulisho,image/png,image/jpg,image/webp]',
-                    'ext_in[pichakitambulisho,png,jpg]',
+                    'mime_in[pichakitambulisho,image/png,image/jpg,image/webp,image/jpeg]',
+                    'ext_in[pichakitambulisho,png,jpg,jpeg]',
                     'max_dims[pichakitambulisho,1024,768]',
                 ],
                 'pichapasport' => [
                     'uploaded[pichapasport]',
                     'max_size[pichapasport,3072]',
-                    'mime_in[pichapasport,image/png,image/jpg,image/webp]',
-                    'ext_in[pichapasport,png,jpg]',
+                    'mime_in[pichapasport,image/png,image/jpg,image/webp,image/jpeg]',
+                    'ext_in[pichapasport,png,jpg,jpeg]',
                     'max_dims[pichapasport,1024,768]',
                 ],
 
