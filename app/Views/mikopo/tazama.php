@@ -23,8 +23,12 @@ helper('form');
                     <a href="/baruayamaombi/<?= urlencode(base64_encode($fun->encrypt($taarifaZamkopo['id']))) ?>" class="btn btn-success "><i class="fa fa-check"></i>Thibitisha mkopo huu</a>
                 <?php endif; ?>
             <?php else : ?>
+                <?php if($taarifaZamkopo['payment_amount']-$taarifaZamkopo['unpaid_amount'] == $taarifaZamkopo['payment_amount']): ?>
+                    <a href="/ongezamkopo/<?php echo urldecode(base64_encode($fun->encrypt($mkopaji['id']))) ?>" class="btn btn-success"><i class="fa fa-plus"></i>Wasilisha maombi ya mkopo</a>
+                    <?php  else: ?>
                 <a href="/ratibamalipo/<?= urlencode(base64_encode($fun->encrypt($taarifaZamkopo['id']))) ?>" class="btn btn-info ">pakua ratiba ya malipo</a>
                 <button class="btn btn-success" type="button" data-toggle="modal" data-target="#paymentModal">Lipa mkopo</button>
+                <?php endif ?>
             <?php endif ?>
         </div>
 

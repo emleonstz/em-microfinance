@@ -5,156 +5,10 @@ use App\Controllers\Functions;
 $fun = new Functions;
 helper('form')
 ?>
-<style>
-    .thumb-lg {
-        height: 88px;
-        width: 88px;
-    }
-
-    .profile-user-box {
-        position: relative;
-        border-radius: 5px
-    }
-
-    .bg-custom {
-        background-color: #02c0ce !important;
-    }
-
-    .profile-user-box {
-        position: relative;
-        border-radius: 5px;
-    }
-
-    .card-box {
-        padding: 20px;
-        border-radius: 3px;
-        margin-bottom: 30px;
-        background-color: #fff;
-    }
-
-    .inbox-widget .inbox-item img {
-        width: 40px;
-    }
-
-    .inbox-widget .inbox-item {
-        border-bottom: 1px solid #f3f6f8;
-        overflow: hidden;
-        padding: 10px 0;
-        position: relative
-    }
-
-    .inbox-widget .inbox-item .inbox-item-img {
-        display: block;
-        float: left;
-        margin-right: 15px;
-        width: 40px
-    }
-
-    .inbox-widget .inbox-item img {
-        width: 40px
-    }
-
-    .inbox-widget .inbox-item .inbox-item-author {
-        color: #313a46;
-        display: block;
-        margin: 0
-    }
-
-    .inbox-widget .inbox-item .inbox-item-text {
-        color: #98a6ad;
-        display: block;
-        font-size: 14px;
-        margin: 0
-    }
-
-    .inbox-widget .inbox-item .inbox-item-date {
-        color: #98a6ad;
-        font-size: 11px;
-        position: absolute;
-        right: 7px;
-        top: 12px
-    }
-
-    .comment-list .comment-box-item {
-        position: relative
-    }
-
-    .comment-list .comment-box-item .commnet-item-date {
-        color: #98a6ad;
-        font-size: 11px;
-        position: absolute;
-        right: 7px;
-        top: 2px
-    }
-
-    .comment-list .comment-box-item .commnet-item-msg {
-        color: #313a46;
-        display: block;
-        margin: 10px 0;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 24px
-    }
-
-    .comment-list .comment-box-item .commnet-item-user {
-        color: #98a6ad;
-        display: block;
-        font-size: 14px;
-        margin: 0
-    }
-
-    .comment-list a+a {
-        margin-top: 15px;
-        display: block
-    }
-
-    .ribbon-box .ribbon-primary {
-        background: #2d7bf4;
-    }
-
-    .ribbon-box .ribbon {
-        position: relative;
-        float: left;
-        clear: both;
-        padding: 5px 12px 5px 12px;
-        margin-left: -30px;
-        margin-bottom: 15px;
-        font-family: Rubik, sans-serif;
-        -webkit-box-shadow: 2px 5px 10px rgba(49, 58, 70, .15);
-        -o-box-shadow: 2px 5px 10px rgba(49, 58, 70, .15);
-        box-shadow: 2px 5px 10px rgba(49, 58, 70, .15);
-        color: #fff;
-        font-size: 13px;
-    }
-
-    .text-custom {
-        color: #02c0ce !important;
-    }
-
-    .badge-custom {
-        background: #02c0ce;
-        color: #fff;
-    }
-
-    .badge {
-        font-family: Rubik, sans-serif;
-        -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, .06), 0 1px 0 0 rgba(0, 0, 0, .02);
-        box-shadow: 0 0 24px 0 rgba(0, 0, 0, .06), 0 1px 0 0 rgba(0, 0, 0, .02);
-        padding: .35em .5em;
-        font-weight: 500;
-    }
-
-    .text-muted {
-        color: #98a6ad !important;
-    }
-
-    .font-13 {
-        font-size: 13px !important;
-    }
-</style>
+<link rel="stylesheet" href="<?php echo base_url('assets/custom/css/wakopajitazam.css') ?>">
 <div class="content">
     <div class="container">
-    <?php if (!empty(session()->get('ujumbe'))) : ?>
+        <?php if (!empty(session()->get('ujumbe'))) : ?>
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <strong><i class="fa fa-exclamation-triangle"></i></strong> <?= session()->get('ujumbe') ?>.
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -218,16 +72,24 @@ helper('form')
                             <div class="text-right">
                                 <?php if (!count($wadhmaini) < 1) : ?>
                                     <?php if ($mkopaji['account_status'] == "Pending") : ?>
-                                        <a href="/pakuamkataba/<?php echo urldecode(base64_encode($fun->encrypt($mkopaji['id']))) ?>" class="btn btn-success waves-effect"><i class="fa fa-download"></i> Pakua Mkataba</a>
-                                        <button class="btn btn-primary" data-toggle="modal" data-target="#mdhaminEditiModal">Hariri Mdhamini</button>
-                                        <a href="/haririwakopaji/<?= urlencode(base64_encode($fun->encrypt($mkopaji['id']))) ?>" type="button" class="btn btn-light waves-effect"><i class="fa fa-pencil"></i> Hariri taarifa</a>
+                                        <?php
+                                        $microfinance = $fun->getMicrofinance();
+                                        if ($microfinance['system_role'] == "afisa_mkopo" || $microfinance['system_role'] == "meneja" || $microfinance['system_role'] == "mkusanyaji" || $microfinance['system_role'] == "mhasibu") :
+                                        ?>
+                                            <!-- wezesha mtumiaji-->
+                                            <a href="/wezeshamtumiaji/<?= urlencode(base64_encode($fun->encrypt($mkopaji['id']))) ?>" type="button" class="btn btn-success waves-effect"><i class="fa fa-pencil"></i> Hariri taarifa</a>
+                                        <?php else : ?>
+                                            <a href="/pakuamkataba/<?php echo urldecode(base64_encode($fun->encrypt($mkopaji['id']))) ?>" class="btn btn-success waves-effect"><i class="fa fa-download"></i> Pakua Mkataba</a>
+                                            <button class="btn btn-primary" data-toggle="modal" data-target="#mdhaminEditiModal">Hariri Mdhamini</button>
+                                            <a href="/haririwakopaji/<?= urlencode(base64_encode($fun->encrypt($mkopaji['id']))) ?>" type="button" class="btn btn-light waves-effect"><i class="fa fa-pencil"></i> Hariri taarifa</a>
+                                        <?php endif ?>
                                     <?php elseif ($mkopaji['account_status'] == "Active") : ?>
-                                        <?php if (count($madeniyote) < 1) : ?>
+                                        <?php if (count($haijamalizka) < 1) : ?>
                                             <!--hadaiwi button ya kuomba-->
                                             <a href="/ongezamkopo/<?php echo urldecode(base64_encode($fun->encrypt($mkopaji['id']))) ?>" class="btn btn-success"><i class="fa fa-plus"></i>Wasilisha maombi ya mkopo</a>
                                         <?php else : ?>
                                             <!--anadaiwa button ya kulipa-->
-                                            <a href="/lipamkopo/<?php echo urldecode(base64_encode($fun->encrypt($mkopaji['id']))) ?>" class="btn btn-success"><i class="fa fa-plus"></i>Lipa mkopo</a>
+                                            <a href="/tazamamkopo/<?php echo urldecode(base64_encode($fun->encrypt($haijamalizka[0]['id']))) ?>" class="btn btn-success"><i class="fa fa-eye"></i>Tazama mkopo</a>
                                         <?php endif ?>
                                     <?php else : ?>
                                         <button class="btn btn-danger" disabled="disabled"><i class="fa fa-ban"></i> Mtumiaji amezuiliwa kutumia huduma zetu.</button>
@@ -511,58 +373,40 @@ helper('form')
                     <div class="col-sm-4">
                         <div class="card-box tilebox-one"><i class="icon-layers float-right text-muted"></i>
                             <h6 class="text-muted text-uppercase mt-0">Idadi ya Mikopo ambayo haijalipwa</h6>
-                            <h2 class="" data-plugin="counterup"><?php echo count($haijamalizka) ?></h2><span class="badge badge-custom">Deni </span><span class="text-muted"><?php
+                            <h2 class="" data-plugin="counterup"><?php echo count($haijamalizka) ?></h2><span class="badge badge-custom">Deni </span><span class="text-muted">
+                                <?php
 
-                                                                                                                                                                                if (!empty($madeniyote) && is_array($madeniyote)) {
-                                                                                                                                                                                    $sum = 0;
-                                                                                                                                                                                    foreach ($madeniyote as $jumla) {
-                                                                                                                                                                                        $sum = $sum + $jumla['unpaid_amount'];
-                                                                                                                                                                                    }
-                                                                                                                                                                                    echo $fun->format_currency($sum);
-                                                                                                                                                                                } else {
+                                if (!empty($haijamalizka) && is_array($haijamalizka)) {
 
-                                                                                                                                                                                    echo $fun->format_currency($sum = 0);
-                                                                                                                                                                                }
-                                                                                                                                                                                ?></span>
+                                    echo $fun->format_currency($haijamalizka[0]['unpaid_amount']);
+                                } else {
+                                    echo $fun->format_currency(0);
+                                }
+                                ?></span>
                         </div>
                     </div>
                     <!-- end col -->
                     <div class="col-sm-4">
                         <div class="card-box tilebox-one"><i class="icon-paypal float-right text-muted"></i>
                             <h6 class="text-muted text-uppercase mt-0">Idadi ya Mikopo iliyopitiziza muda</h6>
-                            <h2 class=""><span data-plugin="counterup"><?php echo count($mikopo_iliyopitilza) ?></span></h2><span class="badge badge-danger">Deni </span><span class="text-muted"><?php
+                            <h2 class=""><span data-plugin="counterup"><?php echo count($mikopo_iliyopitilza) ?></span></h2><span class="badge badge-danger">Deni </span><span class="text-muted">
+                                <?php
 
-                                                                                                                                                                                                    if (!empty($mikopo_iliyopitilza) && is_array($mikopo_iliyopitilza)) {
-                                                                                                                                                                                                        $sum = 0;
-                                                                                                                                                                                                        foreach ($mikopo_iliyopitilza as $jumla) {
-                                                                                                                                                                                                            $sum = $sum + $jumla['unpaid_amount'];
-                                                                                                                                                                                                        }
-                                                                                                                                                                                                        echo $fun->format_currency($sum);
-                                                                                                                                                                                                    } else {
-                                                                                                                                                                                                        echo $fun->format_currency($sum);
-                                                                                                                                                                                                    }
-                                                                                                                                                                                                    ?></span>
+                                if (!empty($mikopo_iliyopitilza) && is_array($mikopo_iliyopitilza)) {
+
+                                    echo $fun->format_currency($mikopo_iliyopitilza[0]['unpaid_amount']);
+                                } else {
+                                    echo $fun->format_currency(0);
+                                }
+                                ?></span>
                         </div>
                     </div>
                     <!-- end col -->
                     <div class="col-sm-4">
                         <div class="card-box tilebox-one"><i class="icon-rocket float-right text-muted"></i>
-                            <h6 class="text-muted text-uppercase mt-0">Idadi ya mikopo iliyolipwa</h6>
-                            <h2 class="" data-plugin="counterup"><?php echo count($iliyomalizika) ?></h2><span class="badge badge-success">Faida </span><span class="text-muted"><?php
-
-                                                                                                                                                                                    if (!empty($iliyomalizika) && is_array($iliyomalizika)) {
-                                                                                                                                                                                        $sumtake = 0;
-                                                                                                                                                                                        $sumpay = 0;
-                                                                                                                                                                                        foreach ($iliyomalizika as $jumla) {
-                                                                                                                                                                                            $sumtake = $sumtake + $jumla['principal_amount'];
-                                                                                                                                                                                            $sumpay = $sumpay + $jumla['payment_amount'];
-                                                                                                                                                                                        }
-                                                                                                                                                                                        $summ = $sumpay - $sumtake;
-                                                                                                                                                                                        echo $fun->format_currency($summ);
-                                                                                                                                                                                    } else {
-                                                                                                                                                                                        echo $fun->format_currency($sum);
-                                                                                                                                                                                    }
-                                                                                                                                                                                    ?></span>
+                            <h6 class="text-muted text-uppercase mt-0">Idadi ya mikopo yote</h6>
+                            <h2 class="" data-plugin="counterup"><?php echo count($madeniyote) ?></h2>
+                            <br>
                         </div>
                     </div>
                     <!-- end col -->
@@ -598,18 +442,18 @@ helper('form')
                                             <td><span class="badge badge-<?php
                                                                             if ($mikopoyote['payment_amount'] == $mikopoyote['unpaid_amount']) {
                                                                                 echo 'info';
-                                                                            } elseif ($mikopoyote['payment_amount'] - $mikopoyote['unpaid_amount'] != 0) {
+                                                                            } elseif ($mikopoyote['payment_amount'] - $mikopoyote['unpaid_amount'] != $mikopoyote['payment_amount']) {
                                                                                 echo 'warning';
-                                                                            } elseif ($mikopoyote['payment_amount'] - $mikopoyote['unpaid_amount'] == 0) {
+                                                                            } elseif ($mikopoyote['payment_amount'] - $mikopoyote['unpaid_amount'] == $mikopoyote['payment_amount']) {
                                                                                 echo 'success';
                                                                             }
                                                                             ?>">
                                                     <?php
                                                     if ($mikopoyote['payment_amount'] == $mikopoyote['unpaid_amount']) {
                                                         echo "Haujalipwa";
-                                                    } elseif ($mikopoyote['payment_amount'] - $mikopoyote['unpaid_amount'] != 0) {
+                                                    } elseif ($mikopoyote['payment_amount'] - $mikopoyote['unpaid_amount'] != $mikopoyote['payment_amount']) {
                                                         echo "Haujamalizika";
-                                                    } elseif ($mikopoyote['payment_amount'] - $mikopoyote['unpaid_amount'] == 0) {
+                                                    } elseif ($mikopoyote['payment_amount'] - $mikopoyote['unpaid_amount'] == $mikopoyote['payment_amount']) {
                                                         echo "Umelipwa";
                                                     }
                                                     ?>
@@ -636,7 +480,9 @@ helper('form')
     <!-- container -->
 </div>
 <script src="<?php echo base_url('assets/js/plugins/jquery.dataTables.min.js') ?>"></script>
-    <script src="<?php echo base_url('assets/js/plugins/dataTables.bootstrap.min.js') ?>"></script>
-    <?php if(! empty($madeniyote) && is_array($madeniyote)) : ?>
-    <script type="text/javascript">$('#mikopotable').DataTable();</script>
-    <?php endif ?>
+<script src="<?php echo base_url('assets/js/plugins/dataTables.bootstrap.min.js') ?>"></script>
+<?php if (!empty($madeniyote) && is_array($madeniyote)) : ?>
+    <script type="text/javascript">
+        $('#mikopotable').DataTable();
+    </script>
+<?php endif ?>

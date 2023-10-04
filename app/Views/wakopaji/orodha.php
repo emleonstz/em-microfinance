@@ -73,7 +73,7 @@ $fun = new Functions;
                 </table>
             </div>
         <?php else : ?>
-            <h3>Hakuna mkopaji yeyote aliyesajiliwa kwa sasa bonyeza hapa kusajili mpokaji mpya <a href="/ongezawakopaji" class="btn btn-primary"><i class="fa fa-user-plus"></i> Sajili</a></h3>
+            <p>Hakuna mkopaji yeyote aliyesajiliwa kwa sasa bonyeza hapa kusajili mpokaji mpya <a href="/ongezawakopaji" class="btn btn-primary"><i class="fa fa-user-plus"></i> Sajili</a></p>
 
         <?php endif; ?>
     </div>

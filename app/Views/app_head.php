@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-
+<?php 
+use App\Controllers\AppheadContoller;
+$head = new AppheadContoller;
+$currentMicrofinance = $head->getMicrofinance();
+?>
 <head>
     <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
     <title>ANY | microfinance</title>
@@ -16,7 +20,7 @@
 
 <body class="app sidebar-mini rtl">
     <!-- Navbar-->
-    <header class="app-header"><a class="app-header__logo" href="/">Vali</a>
+    <header class="app-header"><a class="app-header__logo" href="/"><?= $currentMicrofinance['name'] ?></a>
         <!-- Sidebar toggle button--><a class="app-sidebar__toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
         <!-- Navbar Right Menu-->
         <ul class="app-nav">
@@ -87,7 +91,7 @@
         <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="<?php echo base_url('assets/img/user.png') ?>" width="30px" height="30px" alt="User Image">
             <div>
                 <p class="app-sidebar__user-name"><?php echo session()->USER_FIRSTNAME." ".session()->USER_LASTNAME ?></p>
-                <p class="app-sidebar__user-designation"><i class="fa fa-home"></i> <?php echo session()->USER_POSTION ?></p>
+                <p class="app-sidebar__user-designation"><i class="fa fa-building-o"></i> <?php echo session()->USER_POSTION ?></p>
             </div>
         </div>
         <ul class="app-menu">

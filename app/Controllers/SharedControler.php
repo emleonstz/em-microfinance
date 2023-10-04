@@ -168,6 +168,7 @@ class SharedControler extends BaseController
   {
     return str_replace(',','',number_format($val, $decimal_points));
   }
+  
   //loan calc
   function kikokotooMkopo($kiasi, $ribaYaMwaka, $muda, $ainaYaMuda = 'mwezi', $tareheYaKuanza = null)
   {

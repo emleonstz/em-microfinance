@@ -48,19 +48,19 @@ class MikopoModel extends Model
 
     public function getOverDueLoansbyUser($userid,$microfinanceid){
         $now = time();
-        $query = $this->db->query("SELECT * FROM `loans` WHERE '$now'>`duration` AND `client_id` = ? AND `microfinance_id` = ? AND `unpaid_amount` != 0",[$userid,$microfinanceid],true);
+        $query = $this->db->query("SELECT * FROM `loans` WHERE DATE(NOW())>`duration` AND `client_id` = ? AND `microfinance_id` = ? AND `unpaid_amount` != 0",[$userid,$microfinanceid],true);
         $result = $query->getResultArray();
         return $result;
     }
     public function getHajiaguswaLoansbyUser($userid,$microfinanceid){
         $now = time();
-        $query = $this->db->query("SELECT * FROM `loans` WHERE payment_amount - unpaid_amount = payment_amount AND `client_id` = ? AND `microfinance_id` = ?",[$userid,$microfinanceid],true);
+        $query = $this->db->query("SELECT * FROM `loans` WHERE payment_amount - unpaid_amount = 0 AND `client_id` = ? AND `microfinance_id` = ?",[$userid,$microfinanceid],true);
         $result = $query->getResultArray();
         return $result;
     }
     public function getincompletengLoansbyUser($userid,$microfinanceid){
         $now = time();
-        $query = $this->db->query("SELECT * FROM `loans` WHERE `payment_amount` !=`unpaid_amount` AND  payment_amount - unpaid_amount != payment_amount AND `client_id` = ? AND `microfinance_id` = ?;",[$userid,$microfinanceid],true);
+        $query = $this->db->query("SELECT * FROM `loans` WHERE payment_amount - unpaid_amount != payment_amount AND `client_id` = ? AND `microfinance_id` = ?;",[$userid,$microfinanceid],true);
         $result = $query->getResultArray();
         return $result;
     }

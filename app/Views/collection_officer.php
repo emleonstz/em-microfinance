@@ -1,81 +1,8 @@
-<style>
-    .card-box {
-        position: relative;
-        color: #fff;
-        padding: 20px 10px 40px;
-        margin: 20px 0px;
-    }
-
-    .card-box:hover {
-        text-decoration: none;
-        color: #f1f1f1;
-    }
-
-    .card-box:hover .icon i {
-        font-size: 100px;
-        transition: 1s;
-        -webkit-transition: 1s;
-    }
-
-    .card-box .inner {
-        padding: 5px 10px 0 10px;
-    }
-
-    .card-box h3 {
-        font-size: 27px;
-        font-weight: bold;
-        margin: 0 0 8px 0;
-        white-space: nowrap;
-        padding: 0;
-        text-align: left;
-    }
-
-    .card-box p {
-        font-size: 15px;
-    }
-
-    .card-box .icon {
-        position: absolute;
-        top: auto;
-        bottom: 5px;
-        right: 5px;
-        z-index: 0;
-        font-size: 72px;
-        color: rgba(0, 0, 0, 0.15);
-    }
-
-    .card-box .card-box-footer {
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
-        text-align: center;
-        padding: 3px 0;
-        color: rgba(255, 255, 255, 0.8);
-        background: rgba(0, 0, 0, 0.1);
-        width: 100%;
-        text-decoration: none;
-    }
-
-    .card-box:hover .card-box-footer {
-        background: rgba(0, 0, 0, 0.3);
-    }
-
-    .bg-blue {
-        background-color: #00c0ef !important;
-    }
-
-    .bg-green {
-        background-color: #00a65a !important;
-    }
-
-    .bg-orange {
-        background-color: #f39c12 !important;
-    }
-
-    .bg-red {
-        background-color: #d9534f !important;
-    }
-</style>
+<?php 
+use App\Controllers\Functions;
+$fun  = new Functions;
+?>
+<link rel="stylesheet" href="<?php echo base_url('assets/custom/css/collectiondash.css') ?>">
 <?php if (!empty(session()->get('ujumbe'))) : ?>
     <div class="alert alert-success alert-dismissible fade show" role="alert">
         <strong><i class="fa fa-exclamation-triangle"></i></strong> <?= session()->get('ujumbe') ?>.
@@ -94,9 +21,7 @@
 <?php endif ?>
 <div class="container">
     <p class="bs-component text-right">
-        <a href="/ongezawakopaji" class="btn btn-primary" type="button"><i class="fa fa-user-plus" aria-hidden="true"></i> Sajili Mkopaji</a>
-        <a href="#" class="btn btn-success" type="button"><i class="fa fa-plus" aria-hidden="true"></i> Wasilisha Maombi ya mkopo</a>
-        <a href="#" class="btn btn-success" type="button"><i class="fa fa-money" aria-hidden="true"></i> Wasilisha Malipo mkopo</a>
+        <a href="/ongezawakopaji" class="btn btn-success" type="button"><i class="fa fa-user-plus" aria-hidden="true"></i> Sajili Mkopaji</a>
     </p>
     <div class="row">
         <div class="col-lg-3 col-sm-6">
@@ -108,7 +33,7 @@
                 <div class="icon">
                     <i class="fa fa-money" aria-hidden="true"></i>
                 </div>
-                <a href="#" class="card-box-footer">Tazama zaidi <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="/maombiyanayosubiri" class="card-box-footer">Tazama zaidi <i class="fa fa-arrow-circle-right"></i></a>
             </div>
         </div>
 
@@ -152,48 +77,56 @@
 
     <!-- maombi ya mkopo-->
     <div class="clearfix"></div>
-    <div class="col-md-12">
+    <div class="">
         <div class="tile">
-            <h3 class="tile-title">Maombi ya mikopo yanayosubiri uthibitisho</h3>
-            <div class="table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <h3 class="tile-title">Orodha ya wakopaji</h3>
+            <?php if (!empty($wakopaji) && is_array($wakopaji)) : ?>
+                <div class="table-responsive">
+                    <table class="table" id="wakopajitable">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>kitambulisho</th>
+                                <th>Jina la kwanza</th>
+                                <th>Jina la kati</th>
+                                <th>Jina la Mwisho</th>
+                                <th>Hali ya usajili</th>
+                                <th>Kitendo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($wakopaji as $indexs => $mkopaji) : ?>
+                                <tr>
+                                    <td><?php $index = $indexs + 1;
+                                        echo $index++ ?></td>
+                                    <td><?php echo $mkopaji['refercence_no'] . $mkopaji['id'] ?></td>
+                                    <td><?php echo strtoupper($mkopaji['full_name']) ?></td>
+                                    <td><?php echo strtoupper($mkopaji['middle_name']) ?></td>
+                                    <td><?php echo strtoupper($mkopaji['last_name']) ?></td>
+                                    <td><?php if ($mkopaji['account_status']  == "Pending") :  ?>
+                                            <span class="badge badge-warning">Haujakamilika</span>
+                                        <?php elseif ($mkopaji['account_status']  == "Active") : ?>
+                                            <span class="badge badge-success">Umekamilika</span>
+                                        <?php else : ?>
+                                            <span class="badge badge-danger">Amezuiliwa</span>
+                                        <?php endif; ?>
+                                    </td>
+                                    <td><a href="<?php echo "/tazamamkopaji" . "/" . urlencode(base64_encode($fun->encrypt($mkopaji['id']))) ?>" class="btn btn-primary"><i class="fa fa-eye"></i> Tazama</a></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+            <?php else : ?>
+                <hp>Hakuna mkopaji yeyote aliyesajiliwa kwa sasa bonyeza hapa kusajili mpokaji mpya <a href="/ongezawakopaji" class="btn btn-primary"><i class="fa fa-user-plus"></i> Sajili</a></hp>
+
+            <?php endif; ?>
         </div>
     </div>
 
 </div>
+<script src="<?php echo base_url('assets/js/plugins/jquery.dataTables.min.js') ?>"></script>
+    <script src="<?php echo base_url('assets/js/plugins/dataTables.bootstrap.min.js') ?>"></script>
+    <?php if(! empty($wakopaji) && is_array($wakopaji)) : ?>
+    <script type="text/javascript">$('#wakopajitable').DataTable();</script>
+    <?php endif ?>
