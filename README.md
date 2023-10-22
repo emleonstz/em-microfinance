@@ -1,5 +1,3 @@
----
-
 # Microfinance System
 
 **Microfinance System** a Microfinance System developed using CodeIgniter 4, for financial institutions focusing on microloans. This localized using Swahili.
@@ -30,5 +28,3 @@
 ## License
 
 This system is licensed under the [MIT](LICENSE) license.
-
----
