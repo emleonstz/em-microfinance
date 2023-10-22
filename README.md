@@ -1,6 +1,6 @@
 # Microfinance System
 
-**Microfinance System** a Microfinance System developed using CodeIgniter 4, for financial institutions focusing on microloans. This localized using Swahili.
+**Microfinance System** a Microfinance System developed using CodeIgniter 4, for financial institutions focusing on microloans. Localized using Swahili.
 
 ## Features
 
