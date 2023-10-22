@@ -85,11 +85,7 @@
 
 
 
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="checkbox">Check me out
-                            </label>
-                        </div>
+                        
 
                 </div>
                 <div class="col-lg-4 offset-lg-1">
