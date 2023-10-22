@@ -26,7 +26,8 @@
 1. Clone this repo onto your server.
 2. Configure your environment by editing the `.env` file.
 3. Run migrations (`php spark migrate`) to set up the database structure.
-4. Start the server and access the system.
+4. or create a database then import mikop.sql
+5. Start the server and access the system.
 
 
 ## License
