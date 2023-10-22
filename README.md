@@ -5,6 +5,7 @@
 ## Features
 
 - **Customer Management**: Record, edit, and view detailed profiles of all your customers and employees.
+- **Loan calculator**: auto calculate loan and auto fill results to loan application form.
 - **User ACL**: role and permission of employees.
 - **Generates letters**: Generate customer application, loan application, loan overduer and many easily.
 - **Loan Management**: Facilitate loans for clients, track repayments, and handle arrears.
