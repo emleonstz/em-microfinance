@@ -15,7 +15,7 @@ class SharedControler extends BaseController
   public function __construct()
   {
     $this->usersmodel = new UsersModel();
-    $this->key = "-1neMIEOcfJ?,k(";
+    $this->key = "-1neMIEOcfJJEC$%TYG23US54edbnmy1?,k(";
     $this->stupidEncrypt = new SimpleEncryption($this->key);
   }
   public function index()
