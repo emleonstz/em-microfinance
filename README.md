@@ -4,7 +4,8 @@
 
 ## Features
 
-- **Customer Management**: Record, edit, and view detailed profiles of all your customers.
+- **Customer Management**: Record, edit, and view detailed profiles of all your customers and employees.
+- **User ACL**: role and permission of employees.
 - **Generates letters**: customer application,loan application,loan overduer and many.
 - **Loan Management**: Facilitate loans for clients, track repayments, and handle arrears.
 - **Reports**: Obtain detailed financial reports on all activities within the system.
