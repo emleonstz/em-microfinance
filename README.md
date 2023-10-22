@@ -26,7 +26,7 @@
 1. Clone this repo onto your server.
 2. Configure your environment by editing the `.env` file.
 3. create a database then import mikopo.sql
-4. Start the server and access the system.
+4. Start the server (`php spark serve`) and access the system.
 
 
 ## License
