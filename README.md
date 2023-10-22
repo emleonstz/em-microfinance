@@ -5,8 +5,10 @@
 ## Features
 
 - **Customer Management**: Record, edit, and view detailed profiles of all your customers.
+- **Generates letters**: customer application,loan application,loan overduer and many.
 - **Loan Management**: Facilitate loans for clients, track repayments, and handle arrears.
 - **Reports**: Obtain detailed financial reports on all activities within the system.
+- **Bulk SMS**: send sms to customers and employees,
 - **Security**: Equipped with advanced security measures, including user authentication and activity logging.
 - **Swahili Language**: Fully localized in Swahili anguage.
 
