@@ -6,7 +6,7 @@
 
 - **Customer Management**: Record, edit, and view detailed profiles of all your customers and employees.
 - **User ACL**: role and permission of employees.
-- **Generates letters**: customer application,loan application,loan overduer and many.
+- **Generates letters**: Generate customer application, loan application, loan overduer and many easily.
 - **Loan Management**: Facilitate loans for clients, track repayments, and handle arrears.
 - **Reports**: Obtain detailed financial reports on all activities within the system.
 - **Bulk SMS**: send sms to customers and employees,
