@@ -12,7 +12,7 @@
 - **Reports**: Obtain detailed financial reports on all activities within the system.
 - **Bulk SMS**: send sms to customers and employees,
 - **Security**: Equipped with advanced security measures, including user authentication and activity logging.
-- **Swahili Language**: Fully localized in Swahili anguage.
+- **Swahili Language**: Fully localized in Swahili Language.
 
 ## Requirements
 
