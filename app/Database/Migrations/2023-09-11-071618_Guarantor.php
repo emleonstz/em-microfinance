@@ -13,6 +13,6 @@ class Guarantor extends Migration
 
     public function down()
     {
-        //
+        
     }
 }
